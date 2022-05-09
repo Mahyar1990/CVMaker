@@ -91,6 +91,9 @@ extension PersonalInfoViewController {
                 }
             } else {
                 // handle error that 'Name' is required
+                showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                          alertMessage: "The Name textfield should not be empty!",
+                          okActionText: Constants.Alert.ok)
             }
         }
     }

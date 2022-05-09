@@ -74,6 +74,8 @@ enum Constants {
         static let warningTitle = "Warning"
         static let noCamera     = "can not find camera"
         static let ok           = "OK"
+        
+        static let errorOnSavingData = "Error on saving data"
     }
     
 }
