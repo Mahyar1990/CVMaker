@@ -45,5 +45,10 @@ enum Constants {
         static let duration     = "Duration"
         static let description  = "More Detail"
     }
+    enum EducationDetail {
+        static let className    = "Class"
+        static let passingYear  = "Passing Year"
+        static let percentage   = "Percentage"
+    }
     
 }

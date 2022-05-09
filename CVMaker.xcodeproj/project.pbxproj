@@ -40,6 +40,11 @@
 		3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */; };
 		3E3A649C2829679B00342269 /* SCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */; };
 		3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649D282967B200342269 /* SCollectionViewCell.swift */; };
+		3E3A64A0282969E800342269 /* EDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649F282969E800342269 /* EDCollectionViewController.swift */; };
+		3E3A64A328296A0700342269 /* EDLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A228296A0700342269 /* EDLifeCycle.swift */; };
+		3E3A64A528296A2400342269 /* EDCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A428296A2400342269 /* EDCellViewModel.swift */; };
+		3E3A64A728296A3400342269 /* EDCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */; };
+		3E3A64A928296A4600342269 /* EDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +83,11 @@
 		3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewLifeCycle.swift; sourceTree = "<group>"; };
 		3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewDelegates.swift; sourceTree = "<group>"; };
 		3E3A649D282967B200342269 /* SCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A649F282969E800342269 /* EDCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A64A228296A0700342269 /* EDLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64A428296A2400342269 /* EDCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCellViewModel.swift; sourceTree = "<group>"; };
+		3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,8 @@
 				3E3A64752829181700342269 /* CVTableViewController */,
 				3E3A648528291D9500342269 /* BaseCollectionViewController */,
 				3E3A648928291DD800342269 /* WorkSummaryCollectionViewController */,
+				3E3A64A1282969F000342269 /* EducationDetailsCollectionViewController */,
+				3E3A64982829676400342269 /* SkillsCollectionViewController */,
 				3E3A647828291A0900342269 /* Helpers */,
 				3E3A64532828E32300342269 /* Assets.xcassets */,
 				3E3A64552828E32300342269 /* LaunchScreen.storyboard */,
@@ -204,7 +216,6 @@
 				3E3A648C28291EAB00342269 /* WSCellViewModel.swift */,
 				3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */,
 				3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */,
-				3E3A64982829676400342269 /* SkillsCollectionViewController */,
 			);
 			path = WorkSummaryCollectionViewController;
 			sourceTree = "<group>";
@@ -218,6 +229,18 @@
 				3E3A649D282967B200342269 /* SCollectionViewCell.swift */,
 			);
 			path = SkillsCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64A1282969F000342269 /* EducationDetailsCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A649F282969E800342269 /* EDCollectionViewController.swift */,
+				3E3A64A228296A0700342269 /* EDLifeCycle.swift */,
+				3E3A64A428296A2400342269 /* EDCellViewModel.swift */,
+				3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */,
+				3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */,
+			);
+			path = EducationDetailsCollectionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3A64612828EBBE00342269 /* FontExtension.swift in Sources */,
+				3E3A64A928296A4600342269 /* EDCollectionViewCell.swift in Sources */,
 				3E3A649C2829679B00342269 /* SCollectionViewDelegates.swift in Sources */,
 				3E3A648828291DBB00342269 /* WSCollectionViewController.swift in Sources */,
 				3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */,
@@ -312,13 +336,17 @@
 				3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */,
 				3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */,
 				3E3A647C28291AFB00342269 /* BaseCollectionViewLifeCycle.swift in Sources */,
+				3E3A64A728296A3400342269 /* EDCollectionViewDelegates.swift in Sources */,
 				3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */,
+				3E3A64A328296A0700342269 /* EDLifeCycle.swift in Sources */,
 				3E3A644D2828E32000342269 /* SceneDelegate.swift in Sources */,
 				3E3A645F2828EB1400342269 /* Constants.swift in Sources */,
+				3E3A64A528296A2400342269 /* EDCellViewModel.swift in Sources */,
 				3E3A64632828ED4800342269 /* UIButtonExtension.swift in Sources */,
 				3E3A64652828EE1600342269 /* MViewControllerLifeCycle.swift in Sources */,
 				3E3A64932829200600342269 /* UITextViewExtension.swift in Sources */,
 				3E3A648D28291EAB00342269 /* WSCellViewModel.swift in Sources */,
+				3E3A64A0282969E800342269 /* EDCollectionViewController.swift in Sources */,
 				3E3A6470282911C000342269 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
