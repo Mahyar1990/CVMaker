@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MViewControllerView.swift
 //  CVMaker
 //
 //  Created by Mahyar Jananeh on 5/9/22.
@@ -7,27 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-    
-    let createButton = UIButton()
-    let editButton = UIButton()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor.white
-        setupNavigationBar()
-        setupView()
-    }
-    
-    private func setupNavigationBar() {
-        navigationController?.navigationBar.barTintColor = .systemBlue
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
-                                                                   NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 16)]
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.title = Constants.Main.appTitle
-    }
-    
+extension MainViewController {
     
     func setupView() {
         setupObjectsStyles()
@@ -39,6 +19,7 @@ class MainViewController: UIViewController {
         setupButton(button: createButton, withName: Constants.Main.createCV, withSelector: #selector(createButtonDidSelected))
         setupButton(button: editButton, withName: Constants.Main.editCV, withSelector: #selector(editButtonDidSelected))
     }
+    
     private func setupButton(button: UIButton, withName: String, withSelector: Selector) {
         button.setupMyCustomStyle()
         button.backgroundColor = UIColor.systemBlue
@@ -72,12 +53,4 @@ class MainViewController: UIViewController {
         editButton.heightAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
-    
-    @objc func createButtonDidSelected() {
-    }
-    
-    @objc func editButtonDidSelected() {
-    }
-    
 }
-
