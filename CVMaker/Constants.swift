@@ -15,4 +15,8 @@ enum Constants {
         static let italic   = "GillSans-Italic"
     }
     
+    enum Main {
+        static let appTitle = "CV Maker"
+    }
+    
 }
