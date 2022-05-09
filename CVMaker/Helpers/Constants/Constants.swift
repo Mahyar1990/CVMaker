@@ -57,5 +57,13 @@ enum Constants {
         static let usedTechnologies = "Technology Used"
         static let role             = "Role"
     }
+    enum PersonalInfo {
+        static let name         = "Name"
+        static let cellPhone    = "cellPhone number"
+        static let email        = "Email Address"
+        static let address      = "Resisdence Address"
+        static let objective    = "Career Objective"
+        static let experience   = "Total Years of experience"
+    }
     
 }
