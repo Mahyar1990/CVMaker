@@ -23,6 +23,7 @@
 		3E3A6470282911C000342269 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A646F282911C000342269 /* UIImageExtension.swift */; };
 		3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */; };
 		3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */; };
+		3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3E3A646F282911C000342269 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewControllerLifeCycle.swift; sourceTree = "<group>"; };
 		3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewControllerDelegates.swift; sourceTree = "<group>"; };
+		3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				3E3A644C2828E32000342269 /* SceneDelegate.swift */,
 				3E3A646A2828EF3300342269 /* MainViewController */,
 				3E3A64752829181700342269 /* CVTableViewController */,
+				3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */,
 				3E3A647828291A0900342269 /* Helpers */,
 				3E3A64532828E32300342269 /* Assets.xcassets */,
 				3E3A64552828E32300342269 /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 				3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
 				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
+				3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */,
 				3E3A644D2828E32000342269 /* SceneDelegate.swift in Sources */,
 				3E3A645F2828EB1400342269 /* Constants.swift in Sources */,
 				3E3A64632828ED4800342269 /* UIButtonExtension.swift in Sources */,
