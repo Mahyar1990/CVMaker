@@ -14,7 +14,14 @@ extension BaseCollectionViewController {
         
         view.backgroundColor = UIColor(white: 0.9, alpha: 0.9)
         
+        setupNavigationBar()
+        setupPageTitleStyle()
         setupView()
+    }
+    
+    func setupPageTitleStyle() {
+        pageTitleLabel.setupMyCustomStyle(textColor: .darkGray, fontSize: 18, adjustFontSize: true)
+        pageTitleLabel.textAlignment = .center
     }
     
     
