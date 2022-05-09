@@ -72,6 +72,7 @@
 		3E3A64E72829994F00342269 /* CProjectDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DD2829994F00342269 /* CProjectDetail+CoreDataProperties.swift */; };
 		3E3A64E928299BB400342269 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64E828299BB400342269 /* CoreDataStack.swift */; };
 		3E3A64EB28299BED00342269 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EA28299BED00342269 /* Cache.swift */; };
+		3E3A64ED28299D6500342269 /* RetrieveDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,7 @@
 		3E3A64DD2829994F00342269 /* CProjectDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CProjectDetail+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CProjectDetail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		3E3A64E828299BB400342269 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		3E3A64EA28299BED00342269 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveDataFromCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +345,7 @@
 				3E3A64D3282998FD00342269 /* CoreDataModels */,
 				3E3A64E828299BB400342269 /* CoreDataStack.swift */,
 				3E3A64EA28299BED00342269 /* Cache.swift */,
+				3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */,
 			);
 			name = CoreDataCache;
 			path = ImagePickerManager/CoreDataCache;
@@ -464,6 +467,7 @@
 				3E3A64D2282997AF00342269 /* CVMaker.xcdatamodeld in Sources */,
 				3E3A64EB28299BED00342269 /* Cache.swift in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
+				3E3A64ED28299D6500342269 /* RetrieveDataFromCache.swift in Sources */,
 				3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */,
 				3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */,
 				3E3A64E42829994F00342269 /* CWorkSummary+CoreDataClass.swift in Sources */,
