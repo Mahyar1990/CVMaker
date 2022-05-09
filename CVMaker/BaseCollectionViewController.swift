@@ -9,10 +9,15 @@ import UIKit
 
 class BaseCollectionViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = UIColor(white: 0.9, alpha: 0.9)
-    }
+    let pageTitleLabel = UILabel()
+    
+    let myCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionHeadersPinToVisibleBounds = true
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = UIColor.white
+        return collectionView
+    }()
     
 }
