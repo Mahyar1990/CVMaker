@@ -18,6 +18,15 @@ extension ProjectDetailsCollectionViewController {
         myCollectionView.dataSource = self
     }
     
+    override func retrieveDataFromCache() {
+        Cache.sharedInstance.retrieveAllProjectDetail { [weak self] items in
+            for item in items {
+                let viewModel = ProjectDetailCellViewModel(withCacheObject: item)
+                self?.objectViewModels.append(viewModel)
+            }
+        }
+    }
+    
     @objc override func addButtonSelected() {
         let item = ProjectDetailCellViewModel(projectName: nil, teamSize: nil, projectSummary: nil, usedTechnologies: nil, role: nil)
         objectViewModels.append(item)
