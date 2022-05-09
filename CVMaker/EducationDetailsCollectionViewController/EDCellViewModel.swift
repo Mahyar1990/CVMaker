@@ -21,4 +21,10 @@ struct EducationDetailCellViewModel {
         self.percentage     = percentage
     }
     
+    init(withCacheObject object: CEducationDetail) {
+        self.className      = object.clasName
+        self.passingYear    = object.passingYear
+        self.percentage     = object.percentage
+    }
+    
 }

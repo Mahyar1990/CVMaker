@@ -18,6 +18,15 @@ extension EducationDetailsCollectionViewController {
         myCollectionView.dataSource = self
     }
     
+    override func retrieveDataFromCache() {
+        Cache.sharedInstance.retrieveAllEducationDetail { [weak self] items in
+            for item in items {
+                let viewModel = EducationDetailCellViewModel(withCacheObject: item)
+                self?.objectViewModels.append(viewModel)
+            }
+        }
+    }
+    
     @objc override func addButtonSelected() {
         let item = EducationDetailCellViewModel(className: nil, passingYear: nil, percentage: nil)
         objectViewModels.append(item)
@@ -25,6 +34,19 @@ extension EducationDetailsCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
+        for item in objectViewModels {
+            if let name = item.className {
+                if name != "" && !name.starts(with: " ") {
+                    DispatchQueue.global().async {
+                        Cache.sharedInstance.updateEducationDetailEntity(clasName:      name,
+                                                                         passingYear:   item.passingYear,
+                                                                         percentage:    item.percentage)
+                    }
+                } else {
+                    // handle error that 'ClassName' is required
+                }
+            }
+        }
     }
     
 }

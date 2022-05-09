@@ -18,6 +18,15 @@ extension ProjectDetailsCollectionViewController {
         myCollectionView.dataSource = self
     }
     
+    override func retrieveDataFromCache() {
+        Cache.sharedInstance.retrieveAllProjectDetail { [weak self] items in
+            for item in items {
+                let viewModel = ProjectDetailCellViewModel(withCacheObject: item)
+                self?.objectViewModels.append(viewModel)
+            }
+        }
+    }
+    
     @objc override func addButtonSelected() {
         let item = ProjectDetailCellViewModel(projectName: nil, teamSize: nil, projectSummary: nil, usedTechnologies: nil, role: nil)
         objectViewModels.append(item)
@@ -25,6 +34,21 @@ extension ProjectDetailsCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
+        for item in objectViewModels {
+            if let name = item.projectName {
+                if name != "" && !name.starts(with: " ") {
+                    DispatchQueue.global().async {
+                        Cache.sharedInstance.updateProjectDetailENtity(projectName:     name,
+                                                                       teamSize:        item.teamSize,
+                                                                       usedTechnologies: item.usedTechnologies,
+                                                                       role:            item.role,
+                                                                       summary:         item.projectSummary)
+                    }
+                } else {
+                    // handle error that 'ProjectName' is required
+                }
+            }
+        }
     }
     
 }

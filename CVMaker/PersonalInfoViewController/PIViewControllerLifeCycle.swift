@@ -18,8 +18,37 @@ extension PersonalInfoViewController {
         setupObjectsStyles()
         setupView()
         
+        retrieveDataFromCache()
     }
     
+    func retrieveDataFromCache() {
+        DispatchQueue.global().async {
+            Cache.sharedInstance.retrieveAllPersonalInfoEntities { [weak self] item in
+                if let object = item {
+                    DispatchQueue.main.async { [weak self] in
+                        if let name = object.name {
+                            self?.nameTextField.text = name
+                        }
+                        if let address = object.address {
+                            self?.residenceAddressTextField2.text = address
+                        }
+                        if let cellPhone = object.cellPhone {
+                            self?.cellPhoneTextField.text = cellPhone
+                        }
+                        if let email = object.email {
+                            self?.emailTextField.text = email
+                        }
+                        if let experience = object.experience {
+                            self?.totalYearsOfExperienceTextField.text = experience
+                        }
+                        if let objective = object.objective {
+                            self?.careerObjectiveTextField.text = objective
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     private func setupNavigationBar() {
         navigationController?.navigationBar.barTintColor = .systemBlue
@@ -40,6 +69,30 @@ extension PersonalInfoViewController {
     }
     
     @objc func saveButtonSelected() {
+        if let name = nameTextField.text {
+            if name != "" && !name.starts(with: " ") {
+                let address     = residenceAddressTextField2.text
+                let cellPhone   = cellPhoneTextField.text
+                let email       = emailTextField.text
+                let experience  = totalYearsOfExperienceTextField.text
+                let objective   = careerObjectiveTextField.text
+                var imageData: Data?
+                if let image = userImageView.image {
+                    imageData = image.jpegData(compressionQuality: 1)
+                }
+                DispatchQueue.global().async {
+                    Cache.sharedInstance.updatePersonalInfoEntity(withName:     name,
+                                                                  address:      address,
+                                                                  cellPhone:    cellPhone,
+                                                                  email:        email,
+                                                                  experience:   experience,
+                                                                  objective:    objective,
+                                                                  pictureData:  imageData)
+                }
+            } else {
+                // handle error that 'Name' is required
+            }
+        }
     }
     
     private func setupKeyboardObservers() {

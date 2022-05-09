@@ -28,4 +28,12 @@ struct ProjectDetailCellViewModel {
         self.role               = role
     }
     
+    init(withCacheObject object: CProjectDetail) {
+        self.projectName        = object.projectName
+        self.teamSize           = object.teamSize
+        self.projectSummary     = object.projectSummary
+        self.usedTechnologies   = object.usedTechnologies
+        self.role               = object.role
+    }
+    
 }
