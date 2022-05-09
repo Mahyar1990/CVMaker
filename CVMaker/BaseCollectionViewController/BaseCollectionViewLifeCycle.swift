@@ -18,6 +18,7 @@ extension BaseCollectionViewController {
         setupPageTitleStyle()
         setupCollectionView()
         setupView()
+        setupKeyboardObservers()
     }
     
     func setupPageTitleStyle() {
@@ -36,7 +37,6 @@ extension BaseCollectionViewController {
                                                                    NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 16)]
         navigationController?.navigationBar.tintColor = .white
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        //        navigationItem.title = Constants.Main.workSummary
         
         createAddBarButton()
     }
@@ -54,6 +54,27 @@ extension BaseCollectionViewController {
     @objc func addButtonSelected() {
     }
     @objc func saveButtonSelected() {
+    }
+    
+    func setupKeyboardObservers() {
+        self.hideKeyboardWhenTappedAround()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide(notification:)),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+    }
+    @objc func keyboardWillHide(notification: NSNotification) {
+        let point = CGPoint(x: 0, y: 0)
+        myCollectionView.setContentOffset(point, animated: true)
+    }
+    private func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
 }
