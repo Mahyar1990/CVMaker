@@ -73,6 +73,7 @@
 		3E3A64E928299BB400342269 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64E828299BB400342269 /* CoreDataStack.swift */; };
 		3E3A64EB28299BED00342269 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EA28299BED00342269 /* Cache.swift */; };
 		3E3A64ED28299D6500342269 /* RetrieveDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */; };
+		3E3A64EF28299E8100342269 /* DeleteDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,7 @@
 		3E3A64E828299BB400342269 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		3E3A64EA28299BED00342269 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveDataFromCache.swift; sourceTree = "<group>"; };
+		3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDataFromCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +348,7 @@
 				3E3A64E828299BB400342269 /* CoreDataStack.swift */,
 				3E3A64EA28299BED00342269 /* Cache.swift */,
 				3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */,
+				3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */,
 			);
 			name = CoreDataCache;
 			path = ImagePickerManager/CoreDataCache;
@@ -475,6 +478,7 @@
 				3E3A64C0282972CC00342269 /* PIViewControllerLifeCycle.swift in Sources */,
 				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
 				3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */,
+				3E3A64EF28299E8100342269 /* DeleteDataFromCache.swift in Sources */,
 				3E3A64BE2829726900342269 /* PIViewControllerView.swift in Sources */,
 				3E3A64B828296E8000342269 /* PIViewController.swift in Sources */,
 				3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */,
