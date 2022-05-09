@@ -80,11 +80,7 @@
 				3E3A644C2828E32000342269 /* SceneDelegate.swift */,
 				3E3A646A2828EF3300342269 /* MainViewController */,
 				3E3A64752829181700342269 /* CVTableViewController */,
-				3E3A646D282910FD00342269 /* CVItems.swift */,
-				3E3A645E2828EB1400342269 /* Constants.swift */,
-				3E3A64602828EBBE00342269 /* FontExtension.swift */,
-				3E3A646F282911C000342269 /* UIImageExtension.swift */,
-				3E3A64622828ED4800342269 /* UIButtonExtension.swift */,
+				3E3A647828291A0900342269 /* Helpers */,
 				3E3A64532828E32300342269 /* Assets.xcassets */,
 				3E3A64552828E32300342269 /* LaunchScreen.storyboard */,
 				3E3A64582828E32300342269 /* Info.plist */,
@@ -111,6 +107,34 @@
 				3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */,
 			);
 			path = CVTableViewController;
+			sourceTree = "<group>";
+		};
+		3E3A6476282919EE00342269 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A646D282910FD00342269 /* CVItems.swift */,
+				3E3A645E2828EB1400342269 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3E3A6477282919F800342269 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64602828EBBE00342269 /* FontExtension.swift */,
+				3E3A646F282911C000342269 /* UIImageExtension.swift */,
+				3E3A64622828ED4800342269 /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E3A647828291A0900342269 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A6476282919EE00342269 /* Constants */,
+				3E3A6477282919F800342269 /* Extensions */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
