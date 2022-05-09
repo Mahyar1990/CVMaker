@@ -18,4 +18,13 @@ extension WorkSummaryCollectionViewController {
         myCollectionView.dataSource = self
     }
     
+    @objc override func addButtonSelected() {
+        let item = WorkSummaryCellViewModel(companyName: nil, duration: nil, description: nil)
+        objectViewModels.append(item)
+        print("item added to objectViewModels")
+    }
+    
+    @objc override func saveButtonSelected() {
+    }
+    
 }
