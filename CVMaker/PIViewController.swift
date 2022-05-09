@@ -36,6 +36,7 @@ class PersonalInfoViewController: UIViewController {
         setupNavigationBar()
         setupKeyboardObservers()
         setupObjectsStyles()
+        setupView()
     }
     
     private func setupNavigationBar() {
