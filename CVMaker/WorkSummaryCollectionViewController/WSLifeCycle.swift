@@ -46,6 +46,9 @@ extension WorkSummaryCollectionViewController {
                     }
                 } else {
                     // handle error that 'companyName' is required
+                    showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                              alertMessage: "The CompanyName textfield should not be empty!",
+                              okActionText: Constants.Alert.ok)
                 }
             }
         }
