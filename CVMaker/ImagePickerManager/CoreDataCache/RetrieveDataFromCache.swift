@@ -29,13 +29,17 @@ extension Cache {
         }
     }
     
-    func retrieveAllPersonalInfoEntities(completion: @escaping (CPersonalInfo?)->()) {
+    func retrieveAllPersonalInfoEntities(completion: @escaping (CPersonalInfo?, Data?)->()) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CPersonalInfo")
         do {
             if let result = try context.fetch(fetchRequest) as? [CPersonalInfo] {
                 // find the object on the cache
                 if (result.count > 0) {
-                    completion(result.first!)
+                    if let imageData = retrieveFile(imageName: result.first!.name!) {
+                        completion(result.first!, imageData.data)
+                    } else {
+                        completion(result.first!, nil)
+                    }
                 }
             }
         } catch {
@@ -190,6 +194,32 @@ extension Cache {
             fatalError("Error on fetching list of CSkills")
         }
     }
+    
+    
+    public func retrieveFile(imageName: String) -> (filePath: URL?, data: Data)? {
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let myFilePath = path + "/Files/" + "\(imageName)"
+        
+        if let file = getFileDataFromLocalDirectory(atPath: myFilePath) {
+            return (file.path, file.data)
+        } else {
+            return nil
+        }
+    }
+    private func getFileDataFromLocalDirectory(atPath: String) -> (path: URL, data: Data)? {
+        var file: (path: URL, data: Data)? = nil
+        if FileManager.default.fileExists(atPath: atPath) {
+            let fileURL = URL(fileURLWithPath: atPath)
+            do {
+                let data = try Data(contentsOf: fileURL)
+                file = (fileURL, data)
+            } catch {
+                fatalError("cannot get the fileData from imagPath")
+            }
+        }
+        return file
+    }
+
     
 }
 

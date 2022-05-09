@@ -23,7 +23,7 @@ extension PersonalInfoViewController {
     
     func retrieveDataFromCache() {
         DispatchQueue.global().async {
-            Cache.sharedInstance.retrieveAllPersonalInfoEntities { [weak self] item in
+            Cache.sharedInstance.retrieveAllPersonalInfoEntities { [weak self] (item, data) in
                 if let object = item {
                     DispatchQueue.main.async { [weak self] in
                         if let name = object.name {
@@ -43,6 +43,9 @@ extension PersonalInfoViewController {
                         }
                         if let objective = object.objective {
                             self?.careerObjectiveTextField.text = objective
+                        }
+                        if let imageData = data {
+                            self?.userImageView.image = UIImage(data: imageData)
                         }
                     }
                 }
