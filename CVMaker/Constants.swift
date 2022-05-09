@@ -21,4 +21,17 @@ enum Constants {
         static let editCV   = "Edit CV"
     }
     
+    enum Images {
+        static let personalInfo     = "PersonalInfo"
+        static let careerObjective  = "CareerObjective"
+        static let workSummary      = "WorkSummary"
+        static let skills           = "Skills"
+        static let educationDetails = "EducationDetails"
+        static let projectDetails   = "ProjectDetails"
+        static let trash            = "Trash"
+        static let editImage        = "EditImage"
+        
+        static let defaultAvatar    = "UserAvatar"
+    }
+    
 }

@@ -9,6 +9,12 @@ import UIKit
 
 class CVTableViewController: UITableViewController {
     
+    let items: [CVItems] = [CVItems.PersonalInfo,
+                            CVItems.WorkSummary,
+                            CVItems.Skills,
+                            CVItems.EducationDetails,
+                            CVItems.ProjectDetails]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,11 +24,14 @@ class CVTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return items.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        cell.textLabel?.text = items[indexPath.item].getStringValue()
+        cell.imageView?.image = items[indexPath.item].getImage()
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     
