@@ -9,6 +9,12 @@ import UIKit
 
 class WorkSummaryCollectionViewController: BaseCollectionViewController {
     
-    
+    var objectViewModels = [WorkSummaryCellViewModel]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.myCollectionView.reloadData()
+            }
+        }
+    }
     
 }

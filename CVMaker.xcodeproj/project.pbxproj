@@ -31,6 +31,7 @@
 		3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */; };
 		3E3A648828291DBB00342269 /* WSCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648728291DBB00342269 /* WSCollectionViewController.swift */; };
 		3E3A648B28291DF100342269 /* WSLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648A28291DF100342269 /* WSLifeCycle.swift */; };
+		3E3A648D28291EAB00342269 /* WSCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648C28291EAB00342269 /* WSCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewControllerDelegates.swift; sourceTree = "<group>"; };
 		3E3A648728291DBB00342269 /* WSCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewController.swift; sourceTree = "<group>"; };
 		3E3A648A28291DF100342269 /* WSLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A648C28291EAB00342269 /* WSCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			children = (
 				3E3A648728291DBB00342269 /* WSCollectionViewController.swift */,
 				3E3A648A28291DF100342269 /* WSLifeCycle.swift */,
+				3E3A648C28291EAB00342269 /* WSCellViewModel.swift */,
 			);
 			path = WorkSummaryCollectionViewController;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				3E3A645F2828EB1400342269 /* Constants.swift in Sources */,
 				3E3A64632828ED4800342269 /* UIButtonExtension.swift in Sources */,
 				3E3A64652828EE1600342269 /* MViewControllerLifeCycle.swift in Sources */,
+				3E3A648D28291EAB00342269 /* WSCellViewModel.swift in Sources */,
 				3E3A6470282911C000342269 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
