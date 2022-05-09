@@ -9,6 +9,13 @@ import UIKit
 
 extension PersonalInfoViewController {
     
+    func showAlert(alertTitle:  String?,
+                   alertMessage: String?,
+                   okActionText: String?) {
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: okActionText ?? "Done", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     @objc func editImageButtonDidSelected() {
         ImagePickerManager().pickImage(self) { [weak self] image in
@@ -16,11 +23,6 @@ extension PersonalInfoViewController {
             self?.reloadInputViews()
         }
     }
-    
-    @objc func submitButtonDidSelected () {
-        
-    }
-    
     
     
     // MARK: - Keyboard methods

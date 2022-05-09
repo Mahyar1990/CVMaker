@@ -37,6 +37,9 @@ extension SkillsCollectionViewController {
                 }
             } else {
                 // handle error that 'skill' is required
+                showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                          alertMessage: "The Skill textfield should not be empty!",
+                          okActionText: Constants.Alert.ok)
             }
         }
     }

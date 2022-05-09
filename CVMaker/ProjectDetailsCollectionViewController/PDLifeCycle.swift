@@ -46,6 +46,9 @@ extension ProjectDetailsCollectionViewController {
                     }
                 } else {
                     // handle error that 'ProjectName' is required
+                    showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                              alertMessage: "The ProjectName textfield should not be empty!",
+                              okActionText: Constants.Alert.ok)
                 }
             }
         }
