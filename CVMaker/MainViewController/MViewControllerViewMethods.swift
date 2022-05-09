@@ -10,7 +10,8 @@ import Foundation
 extension MainViewController {
     
     @objc func createButtonDidSelected() {
-        
+        let vc = CVTableViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func editButtonDidSelected() {
