@@ -33,7 +33,35 @@ class PersonalInfoViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        setupKeyboardObservers()
+        setupObjectsStyles()
     }
+    
+    private func setupKeyboardObservers() {
+        self.hideKeyboardWhenTappedAround()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide(notification:)),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+    }
+    
+    // MARK: - Keyboard methods
+    @objc func keyboardWillHide(notification: NSNotification) {
+        let point = CGPoint(x: 0, y: 0)
+        scrollView.setContentOffset(point, animated: true)
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+
     
     // MARK: - setup Objects Styles
     func setupObjectsStyles() {
