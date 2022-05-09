@@ -40,6 +40,30 @@ extension PersonalInfoViewController {
     }
     
     @objc func saveButtonSelected() {
+        if let name = nameTextField.text {
+            if name != "" && !name.starts(with: " ") {
+                let address     = residenceAddressTextField2.text
+                let cellPhone   = cellPhoneTextField.text
+                let email       = emailTextField.text
+                let experience  = totalYearsOfExperienceTextField.text
+                let objective   = careerObjectiveTextField.text
+                var imageData: Data?
+                if let image = userImageView.image {
+                    imageData = image.jpegData(compressionQuality: 1)
+                }
+                DispatchQueue.global().async {
+                    Cache.sharedInstance.updatePersonalInfoEntity(withName:     name,
+                                                                  address:      address,
+                                                                  cellPhone:    cellPhone,
+                                                                  email:        email,
+                                                                  experience:   experience,
+                                                                  objective:    objective,
+                                                                  pictureData:  imageData)
+                }
+            } else {
+                // handle error that 'Name' is required
+            }
+        }
     }
     
     private func setupKeyboardObservers() {
