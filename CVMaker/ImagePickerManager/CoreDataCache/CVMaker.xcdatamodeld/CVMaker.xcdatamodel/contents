@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CEducationDetail" representedClassName=".CEducationDetail" syncable="YES">
+        <attribute name="clasName" optional="YES" attributeType="String"/>
+        <attribute name="passingYear" optional="YES" attributeType="String"/>
+        <attribute name="percentage" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CPersonalInfo" representedClassName=".CPersonalInfo" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="cellPhone" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="experience" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="objective" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CProjectDetail" representedClassName=".CProjectDetail" syncable="YES">
+        <attribute name="projectName" optional="YES" attributeType="String"/>
+        <attribute name="projectSummary" optional="YES" attributeType="String"/>
+        <attribute name="role" optional="YES" attributeType="String"/>
+        <attribute name="teamSize" optional="YES" attributeType="String"/>
+        <attribute name="usedTechnologies" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CSkills" representedClassName=".CSkills" syncable="YES">
+        <attribute name="writeSkill" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CWorkSummary" representedClassName=".CWorkSummary" syncable="YES">
+        <attribute name="companyName" optional="YES" attributeType="String"/>
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="duration" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CEducationDetail" positionX="-9" positionY="36" width="128" height="74"/>
+        <element name="CPersonalInfo" positionX="-9" positionY="36" width="128" height="119"/>
+        <element name="CProjectDetail" positionX="0" positionY="45" width="128" height="104"/>
+        <element name="CSkills" positionX="18" positionY="63" width="128" height="44"/>
+        <element name="CWorkSummary" positionX="36" positionY="81" width="128" height="74"/>
+    </elements>
+</model>

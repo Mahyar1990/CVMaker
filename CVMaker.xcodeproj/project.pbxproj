@@ -59,6 +59,7 @@
 		3E3A64C52829779A00342269 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C42829779A00342269 /* ImagePickerManager.swift */; };
 		3E3A64C8282977B400342269 /* ImagePickerManagerMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C7282977B400342269 /* ImagePickerManagerMethods.swift */; };
 		3E3A64CA282977C500342269 /* ImagePickerManagerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C9282977C500342269 /* ImagePickerManagerDelegates.swift */; };
+		3E3A64D2282997AF00342269 /* CVMaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D0282997AF00342269 /* CVMaker.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		3E3A64C42829779A00342269 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		3E3A64C7282977B400342269 /* ImagePickerManagerMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManagerMethods.swift; sourceTree = "<group>"; };
 		3E3A64C9282977C500342269 /* ImagePickerManagerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManagerDelegates.swift; sourceTree = "<group>"; };
+		3E3A64D1282997AF00342269 /* CVMaker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CVMaker.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				3E3A64982829676400342269 /* SkillsCollectionViewController */,
 				3E3A64C6282977A200342269 /* ImagePickerManager */,
 				3E3A647828291A0900342269 /* Helpers */,
+				3E3A64CF2829978A00342269 /* CoreDataCache */,
 				3E3A64532828E32300342269 /* Assets.xcassets */,
 				3E3A64552828E32300342269 /* LaunchScreen.storyboard */,
 				3E3A64582828E32300342269 /* Info.plist */,
@@ -309,6 +312,15 @@
 			path = ImagePickerManager;
 			sourceTree = "<group>";
 		};
+		3E3A64CF2829978A00342269 /* CoreDataCache */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64D0282997AF00342269 /* CVMaker.xcdatamodeld */,
+			);
+			name = CoreDataCache;
+			path = ImagePickerManager/CoreDataCache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -399,6 +411,7 @@
 				3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */,
 				3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */,
 				3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */,
+				3E3A64D2282997AF00342269 /* CVMaker.xcdatamodeld in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
 				3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */,
 				3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */,
@@ -621,6 +634,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3E3A64D0282997AF00342269 /* CVMaker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3E3A64D1282997AF00342269 /* CVMaker.xcdatamodel */,
+			);
+			currentVersion = 3E3A64D1282997AF00342269 /* CVMaker.xcdatamodel */;
+			path = CVMaker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3E3A643F2828E32000342269 /* Project object */;
 }
