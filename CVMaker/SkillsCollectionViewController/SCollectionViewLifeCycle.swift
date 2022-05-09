@@ -22,6 +22,15 @@ extension SkillsCollectionViewController {
         skillItems.append(item)
     }
     @objc override func saveButtonSelected() {
+        for name in skillItems {
+            if name != "" && !name.starts(with: " ") {
+                DispatchQueue.global().async {
+                    Cache.sharedInstance.updateSkillsEntity(writeSkill: name)
+                }
+            } else {
+                // handle error that 'skill' is required
+            }
+        }
     }
     
 }
