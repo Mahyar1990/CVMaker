@@ -25,6 +25,19 @@ extension WorkSummaryCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
+        for item in objectViewModels {
+            if let name = item.companyName {
+                if name != "" && !name.starts(with: " ") {
+                    DispatchQueue.global().async {
+                        Cache.sharedInstance.updateWorkSummaryEntoty(companyName: name,
+                                                                     duration: item.duration,
+                                                                     descriptions: item.description)
+                    }
+                } else {
+                    // handle error that 'companyName' is required
+                }
+            }
+        }
     }
     
 }
