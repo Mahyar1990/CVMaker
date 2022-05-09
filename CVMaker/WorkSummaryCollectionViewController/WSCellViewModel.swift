@@ -20,7 +20,12 @@ struct WorkSummaryCellViewModel {
         self.companyName    = companyName
         self.duration       = duration
         self.description    = description
-        
+    }
+    
+    init(withCacheObject object: CWorkSummary) {
+        self.companyName    = object.companyName
+        self.duration       = object.duration
+        self.description    = object.description
     }
     
 }

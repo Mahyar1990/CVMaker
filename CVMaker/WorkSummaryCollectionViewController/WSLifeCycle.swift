@@ -18,6 +18,17 @@ extension WorkSummaryCollectionViewController {
         myCollectionView.dataSource = self
     }
     
+    override func retrieveDataFromCache() {
+        DispatchQueue.global().async {
+            Cache.sharedInstance.retrieveAllWorkSummary { [weak self] items in
+                for item in items {
+                    let viewModel = WorkSummaryCellViewModel(withCacheObject: item)
+                    self?.objectViewModels.append(viewModel)
+                }
+            }
+        }
+    }
+    
     @objc override func addButtonSelected() {
         let item = WorkSummaryCellViewModel(companyName: nil, duration: nil, description: nil)
         objectViewModels.append(item)

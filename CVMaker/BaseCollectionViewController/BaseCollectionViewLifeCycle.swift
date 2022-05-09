@@ -19,6 +19,12 @@ extension BaseCollectionViewController {
         setupCollectionView()
         setupView()
         setupKeyboardObservers()
+        
+        retrieveDataFromCache()
+    }
+    
+    @objc func retrieveDataFromCache() {
+        
     }
     
     func setupPageTitleStyle() {
