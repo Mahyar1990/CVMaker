@@ -66,4 +66,14 @@ enum Constants {
         static let experience   = "Total Years of experience"
     }
     
+    enum Alert {
+        static let chooseYourImageTitle = "Select your Image"
+        static let camera   = "Camera"
+        static let gallery  = "Gallery"
+        static let cancel   = "Cancel"
+        static let warningTitle = "Warning"
+        static let noCamera     = "can not find camera"
+        static let ok           = "OK"
+    }
+    
 }

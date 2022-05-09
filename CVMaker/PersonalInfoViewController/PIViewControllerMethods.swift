@@ -11,7 +11,10 @@ extension PersonalInfoViewController {
     
     
     @objc func editImageButtonDidSelected() {
-        
+        ImagePickerManager().pickImage(self) { [weak self] image in
+            self?.userImageView.image = image
+            self?.reloadInputViews()
+        }
     }
     
     @objc func submitButtonDidSelected () {
