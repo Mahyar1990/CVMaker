@@ -19,6 +19,12 @@ enum Constants {
         static let appTitle = "CV Maker"
         static let createCV = "Create CV"
         static let editCV   = "Edit CV"
+        
+        static let personalInfo     = "Personal Info"
+        static let workSummary      = "Work Summary"
+        static let skills           = "Skills"
+        static let educationDetails = "Education Details"
+        static let projectDetails   = "Project Details"
     }
     
     enum Images {
@@ -32,6 +38,24 @@ enum Constants {
         static let editImage        = "EditImage"
         
         static let defaultAvatar    = "UserAvatar"
+    }
+    
+    enum WorkSummary {
+        static let companyName  = "Company Name"
+        static let duration     = "Duration"
+        static let description  = "More Detail"
+    }
+    enum EducationDetail {
+        static let className    = "Class"
+        static let passingYear  = "Passing Year"
+        static let percentage   = "Percentage"
+    }
+    enum ProjectDetail {
+        static let projectName      = "Project Name"
+        static let teamSize         = "Team Size"
+        static let projectSummary   = "Project Summary"
+        static let usedTechnologies = "Technology Used"
+        static let role             = "Role"
     }
     
 }

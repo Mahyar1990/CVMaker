@@ -23,6 +23,33 @@
 		3E3A6470282911C000342269 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A646F282911C000342269 /* UIImageExtension.swift */; };
 		3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */; };
 		3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */; };
+		3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */; };
+		3E3A647C28291AFB00342269 /* BaseCollectionViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */; };
+		3E3A647E28291B2B00342269 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647D28291B2B00342269 /* UILabelExtension.swift */; };
+		3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */; };
+		3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */; };
+		3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */; };
+		3E3A648828291DBB00342269 /* WSCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648728291DBB00342269 /* WSCollectionViewController.swift */; };
+		3E3A648B28291DF100342269 /* WSLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648A28291DF100342269 /* WSLifeCycle.swift */; };
+		3E3A648D28291EAB00342269 /* WSCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648C28291EAB00342269 /* WSCellViewModel.swift */; };
+		3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */; };
+		3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649028291F8200342269 /* UITextFieldExtension.swift */; };
+		3E3A64932829200600342269 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64922829200600342269 /* UITextViewExtension.swift */; };
+		3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */; };
+		3E3A64972829675A00342269 /* SCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64962829675A00342269 /* SCollectionViewController.swift */; };
+		3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */; };
+		3E3A649C2829679B00342269 /* SCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */; };
+		3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649D282967B200342269 /* SCollectionViewCell.swift */; };
+		3E3A64A0282969E800342269 /* EDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649F282969E800342269 /* EDCollectionViewController.swift */; };
+		3E3A64A328296A0700342269 /* EDLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A228296A0700342269 /* EDLifeCycle.swift */; };
+		3E3A64A528296A2400342269 /* EDCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A428296A2400342269 /* EDCellViewModel.swift */; };
+		3E3A64A728296A3400342269 /* EDCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */; };
+		3E3A64A928296A4600342269 /* EDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */; };
+		3E3A64AB28296B4800342269 /* PDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64AA28296B4800342269 /* PDCollectionViewController.swift */; };
+		3E3A64AD28296B5700342269 /* PDLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64AC28296B5700342269 /* PDLifeCycle.swift */; };
+		3E3A64B028296BF400342269 /* PDCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64AF28296BF400342269 /* PDCellViewModel.swift */; };
+		3E3A64B228296C0D00342269 /* PDCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64B128296C0D00342269 /* PDCollectionViewDelegates.swift */; };
+		3E3A64B428296C1D00342269 /* PDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64B328296C1D00342269 /* PDCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +71,33 @@
 		3E3A646F282911C000342269 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewControllerLifeCycle.swift; sourceTree = "<group>"; };
 		3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewControllerDelegates.swift; sourceTree = "<group>"; };
+		3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A647D28291B2B00342269 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewControllerView.swift; sourceTree = "<group>"; };
+		3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewControllerDelegates.swift; sourceTree = "<group>"; };
+		3E3A648728291DBB00342269 /* WSCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A648A28291DF100342269 /* WSLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A648C28291EAB00342269 /* WSCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCellViewModel.swift; sourceTree = "<group>"; };
+		3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A649028291F8200342269 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		3E3A64922829200600342269 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A64962829675A00342269 /* SCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A649D282967B200342269 /* SCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A649F282969E800342269 /* EDCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A64A228296A0700342269 /* EDLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64A428296A2400342269 /* EDCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCellViewModel.swift; sourceTree = "<group>"; };
+		3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A64AA28296B4800342269 /* PDCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A64AC28296B5700342269 /* PDLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64AF28296BF400342269 /* PDCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDCellViewModel.swift; sourceTree = "<group>"; };
+		3E3A64B128296C0D00342269 /* PDCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A64B328296C1D00342269 /* PDCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +134,12 @@
 				3E3A644C2828E32000342269 /* SceneDelegate.swift */,
 				3E3A646A2828EF3300342269 /* MainViewController */,
 				3E3A64752829181700342269 /* CVTableViewController */,
-				3E3A646D282910FD00342269 /* CVItems.swift */,
-				3E3A645E2828EB1400342269 /* Constants.swift */,
-				3E3A64602828EBBE00342269 /* FontExtension.swift */,
-				3E3A646F282911C000342269 /* UIImageExtension.swift */,
-				3E3A64622828ED4800342269 /* UIButtonExtension.swift */,
+				3E3A648528291D9500342269 /* BaseCollectionViewController */,
+				3E3A648928291DD800342269 /* WorkSummaryCollectionViewController */,
+				3E3A64A1282969F000342269 /* EducationDetailsCollectionViewController */,
+				3E3A64AE28296B7D00342269 /* ProjectDetailsCollectionViewController */,
+				3E3A64982829676400342269 /* SkillsCollectionViewController */,
+				3E3A647828291A0900342269 /* Helpers */,
 				3E3A64532828E32300342269 /* Assets.xcassets */,
 				3E3A64552828E32300342269 /* LaunchScreen.storyboard */,
 				3E3A64582828E32300342269 /* Info.plist */,
@@ -111,6 +166,104 @@
 				3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */,
 			);
 			path = CVTableViewController;
+			sourceTree = "<group>";
+		};
+		3E3A6476282919EE00342269 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A646D282910FD00342269 /* CVItems.swift */,
+				3E3A645E2828EB1400342269 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3E3A6477282919F800342269 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64602828EBBE00342269 /* FontExtension.swift */,
+				3E3A647D28291B2B00342269 /* UILabelExtension.swift */,
+				3E3A646F282911C000342269 /* UIImageExtension.swift */,
+				3E3A64622828ED4800342269 /* UIButtonExtension.swift */,
+				3E3A649028291F8200342269 /* UITextFieldExtension.swift */,
+				3E3A64922829200600342269 /* UITextViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E3A647828291A0900342269 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A6476282919EE00342269 /* Constants */,
+				3E3A6477282919F800342269 /* Extensions */,
+				3E3A648628291DA100342269 /* BaseCells */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3E3A648528291D9500342269 /* BaseCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */,
+				3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */,
+				3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */,
+				3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */,
+			);
+			path = BaseCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A648628291DA100342269 /* BaseCells */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */,
+			);
+			path = BaseCells;
+			sourceTree = "<group>";
+		};
+		3E3A648928291DD800342269 /* WorkSummaryCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A648728291DBB00342269 /* WSCollectionViewController.swift */,
+				3E3A648A28291DF100342269 /* WSLifeCycle.swift */,
+				3E3A648C28291EAB00342269 /* WSCellViewModel.swift */,
+				3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */,
+				3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */,
+			);
+			path = WorkSummaryCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64982829676400342269 /* SkillsCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64962829675A00342269 /* SCollectionViewController.swift */,
+				3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */,
+				3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */,
+				3E3A649D282967B200342269 /* SCollectionViewCell.swift */,
+			);
+			path = SkillsCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64A1282969F000342269 /* EducationDetailsCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A649F282969E800342269 /* EDCollectionViewController.swift */,
+				3E3A64A228296A0700342269 /* EDLifeCycle.swift */,
+				3E3A64A428296A2400342269 /* EDCellViewModel.swift */,
+				3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */,
+				3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */,
+			);
+			path = EducationDetailsCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64AE28296B7D00342269 /* ProjectDetailsCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64AA28296B4800342269 /* PDCollectionViewController.swift */,
+				3E3A64AC28296B5700342269 /* PDLifeCycle.swift */,
+				3E3A64AF28296BF400342269 /* PDCellViewModel.swift */,
+				3E3A64B128296C0D00342269 /* PDCollectionViewDelegates.swift */,
+				3E3A64B328296C1D00342269 /* PDCollectionViewCell.swift */,
+			);
+			path = ProjectDetailsCollectionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,19 +336,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3A64612828EBBE00342269 /* FontExtension.swift in Sources */,
+				3E3A64A928296A4600342269 /* EDCollectionViewCell.swift in Sources */,
+				3E3A64AD28296B5700342269 /* PDLifeCycle.swift in Sources */,
+				3E3A649C2829679B00342269 /* SCollectionViewDelegates.swift in Sources */,
+				3E3A648828291DBB00342269 /* WSCollectionViewController.swift in Sources */,
 				3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */,
+				3E3A647E28291B2B00342269 /* UILabelExtension.swift in Sources */,
 				3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */,
 				3E3A644F2828E32000342269 /* MainViewController.swift in Sources */,
+				3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */,
 				3E3A646E282910FD00342269 /* CVItems.swift in Sources */,
+				3E3A64B228296C0D00342269 /* PDCollectionViewDelegates.swift in Sources */,
+				3E3A64972829675A00342269 /* SCollectionViewController.swift in Sources */,
 				3E3A646C2828F10E00342269 /* CVTableViewController.swift in Sources */,
+				3E3A648B28291DF100342269 /* WSLifeCycle.swift in Sources */,
+				3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */,
 				3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */,
+				3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
+				3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */,
+				3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */,
 				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
+				3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */,
+				3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */,
+				3E3A64AB28296B4800342269 /* PDCollectionViewController.swift in Sources */,
+				3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */,
+				3E3A647C28291AFB00342269 /* BaseCollectionViewLifeCycle.swift in Sources */,
+				3E3A64B428296C1D00342269 /* PDCollectionViewCell.swift in Sources */,
+				3E3A64A728296A3400342269 /* EDCollectionViewDelegates.swift in Sources */,
+				3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */,
+				3E3A64A328296A0700342269 /* EDLifeCycle.swift in Sources */,
 				3E3A644D2828E32000342269 /* SceneDelegate.swift in Sources */,
 				3E3A645F2828EB1400342269 /* Constants.swift in Sources */,
+				3E3A64A528296A2400342269 /* EDCellViewModel.swift in Sources */,
 				3E3A64632828ED4800342269 /* UIButtonExtension.swift in Sources */,
 				3E3A64652828EE1600342269 /* MViewControllerLifeCycle.swift in Sources */,
+				3E3A64932829200600342269 /* UITextViewExtension.swift in Sources */,
+				3E3A648D28291EAB00342269 /* WSCellViewModel.swift in Sources */,
+				3E3A64A0282969E800342269 /* EDCollectionViewController.swift in Sources */,
 				3E3A6470282911C000342269 /* UIImageExtension.swift in Sources */,
+				3E3A64B028296BF400342269 /* PDCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
