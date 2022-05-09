@@ -86,6 +86,7 @@ class PersonalInfoViewController: UIViewController {
         textfield.layer.borderWidth = 1
         textfield.layer.borderColor = UIColor.lightGray.cgColor
         textfield.layer.cornerRadius = 4
+        textfield.delegate = self
     }
     
     private func setupTextView(_ textview: UITextView) {
@@ -95,6 +96,7 @@ class PersonalInfoViewController: UIViewController {
         textview.layer.borderWidth = 1
         textview.layer.borderColor = UIColor.lightGray.cgColor
         textview.layer.cornerRadius = 4
+        textview.delegate = self
     }
     
     
