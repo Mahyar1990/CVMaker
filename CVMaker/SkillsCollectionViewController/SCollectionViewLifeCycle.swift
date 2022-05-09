@@ -17,6 +17,14 @@ extension SkillsCollectionViewController {
         myCollectionView.dataSource = self
     }
     
+    override func retrieveDataFromCache() {
+        Cache.sharedInstance.retrieveAllSkills { [weak self] items in
+            for item in items {
+                self?.skillItems.append(item.writeSkill ?? "")
+            }
+        }
+    }
+    
     @objc override func addButtonSelected() {
         let item = ""
         skillItems.append(item)
