@@ -25,6 +25,19 @@ extension EducationDetailsCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
+        for item in objectViewModels {
+            if let name = item.className {
+                if name != "" && !name.starts(with: " ") {
+                    DispatchQueue.global().async {
+                        Cache.sharedInstance.updateEducationDetailEntity(clasName:      name,
+                                                                         passingYear:   item.passingYear,
+                                                                         percentage:    item.percentage)
+                    }
+                } else {
+                    // handle error that 'ClassName' is required
+                }
+            }
+        }
     }
     
 }
