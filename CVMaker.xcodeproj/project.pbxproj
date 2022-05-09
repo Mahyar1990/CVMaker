@@ -74,6 +74,7 @@
 		3E3A64EB28299BED00342269 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EA28299BED00342269 /* Cache.swift */; };
 		3E3A64ED28299D6500342269 /* RetrieveDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */; };
 		3E3A64EF28299E8100342269 /* DeleteDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */; };
+		3E3A64F128299F0800342269 /* SaveDataToCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64F028299F0800342269 /* SaveDataToCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +147,7 @@
 		3E3A64EA28299BED00342269 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveDataFromCache.swift; sourceTree = "<group>"; };
 		3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDataFromCache.swift; sourceTree = "<group>"; };
+		3E3A64F028299F0800342269 /* SaveDataToCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDataToCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,8 +349,9 @@
 				3E3A64D3282998FD00342269 /* CoreDataModels */,
 				3E3A64E828299BB400342269 /* CoreDataStack.swift */,
 				3E3A64EA28299BED00342269 /* Cache.swift */,
-				3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */,
+				3E3A64F028299F0800342269 /* SaveDataToCache.swift */,
 				3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */,
+				3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */,
 			);
 			name = CoreDataCache;
 			path = ImagePickerManager/CoreDataCache;
@@ -452,6 +455,7 @@
 				3E3A64E928299BB400342269 /* CoreDataStack.swift in Sources */,
 				3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */,
 				3E3A64C22829760900342269 /* PIViewControllerMethods.swift in Sources */,
+				3E3A64F128299F0800342269 /* SaveDataToCache.swift in Sources */,
 				3E3A64DF2829994F00342269 /* CSkills+CoreDataProperties.swift in Sources */,
 				3E3A644F2828E32000342269 /* MainViewController.swift in Sources */,
 				3E3A64E22829994F00342269 /* CEducationDetail+CoreDataClass.swift in Sources */,
