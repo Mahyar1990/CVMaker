@@ -17,6 +17,8 @@ enum Constants {
     
     enum Main {
         static let appTitle = "CV Maker"
+        static let createCV = "Create CV"
+        static let editCV   = "Edit CV"
     }
     
 }
