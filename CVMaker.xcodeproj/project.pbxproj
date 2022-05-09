@@ -35,6 +35,7 @@
 		3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */; };
 		3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649028291F8200342269 /* UITextFieldExtension.swift */; };
 		3E3A64932829200600342269 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64922829200600342269 /* UITextViewExtension.swift */; };
+		3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewCell.swift; sourceTree = "<group>"; };
 		3E3A649028291F8200342269 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		3E3A64922829200600342269 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewDelegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				3E3A648728291DBB00342269 /* WSCollectionViewController.swift */,
 				3E3A648A28291DF100342269 /* WSLifeCycle.swift */,
 				3E3A648C28291EAB00342269 /* WSCellViewModel.swift */,
+				3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */,
 				3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */,
 			);
 			path = WorkSummaryCollectionViewController;
@@ -278,6 +281,7 @@
 				3E3A648B28291DF100342269 /* WSLifeCycle.swift in Sources */,
 				3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */,
 				3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */,
+				3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
 				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
 				3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */,

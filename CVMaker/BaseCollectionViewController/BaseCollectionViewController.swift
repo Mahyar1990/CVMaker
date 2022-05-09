@@ -20,4 +20,6 @@ class BaseCollectionViewController: UIViewController {
         return collectionView
     }()
     
+    let cellId = "cellId"
+    
 }
