@@ -60,6 +60,16 @@
 		3E3A64C8282977B400342269 /* ImagePickerManagerMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C7282977B400342269 /* ImagePickerManagerMethods.swift */; };
 		3E3A64CA282977C500342269 /* ImagePickerManagerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C9282977C500342269 /* ImagePickerManagerDelegates.swift */; };
 		3E3A64D2282997AF00342269 /* CVMaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D0282997AF00342269 /* CVMaker.xcdatamodeld */; };
+		3E3A64DE2829994F00342269 /* CSkills+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D42829994F00342269 /* CSkills+CoreDataClass.swift */; };
+		3E3A64DF2829994F00342269 /* CSkills+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D52829994F00342269 /* CSkills+CoreDataProperties.swift */; };
+		3E3A64E02829994F00342269 /* CPersonalInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D62829994F00342269 /* CPersonalInfo+CoreDataClass.swift */; };
+		3E3A64E12829994F00342269 /* CPersonalInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D72829994F00342269 /* CPersonalInfo+CoreDataProperties.swift */; };
+		3E3A64E22829994F00342269 /* CEducationDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D82829994F00342269 /* CEducationDetail+CoreDataClass.swift */; };
+		3E3A64E32829994F00342269 /* CEducationDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D92829994F00342269 /* CEducationDetail+CoreDataProperties.swift */; };
+		3E3A64E42829994F00342269 /* CWorkSummary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DA2829994F00342269 /* CWorkSummary+CoreDataClass.swift */; };
+		3E3A64E52829994F00342269 /* CWorkSummary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DB2829994F00342269 /* CWorkSummary+CoreDataProperties.swift */; };
+		3E3A64E62829994F00342269 /* CProjectDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DC2829994F00342269 /* CProjectDetail+CoreDataClass.swift */; };
+		3E3A64E72829994F00342269 /* CProjectDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DD2829994F00342269 /* CProjectDetail+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +128,16 @@
 		3E3A64C7282977B400342269 /* ImagePickerManagerMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManagerMethods.swift; sourceTree = "<group>"; };
 		3E3A64C9282977C500342269 /* ImagePickerManagerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManagerDelegates.swift; sourceTree = "<group>"; };
 		3E3A64D1282997AF00342269 /* CVMaker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CVMaker.xcdatamodel; sourceTree = "<group>"; };
+		3E3A64D42829994F00342269 /* CSkills+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CSkills+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CSkills+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D52829994F00342269 /* CSkills+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CSkills+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CSkills+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D62829994F00342269 /* CPersonalInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CPersonalInfo+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CPersonalInfo+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D72829994F00342269 /* CPersonalInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CPersonalInfo+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CPersonalInfo+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D82829994F00342269 /* CEducationDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CEducationDetail+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CEducationDetail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D92829994F00342269 /* CEducationDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CEducationDetail+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CEducationDetail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64DA2829994F00342269 /* CWorkSummary+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CWorkSummary+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CWorkSummary+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64DB2829994F00342269 /* CWorkSummary+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CWorkSummary+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CWorkSummary+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64DC2829994F00342269 /* CProjectDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CProjectDetail+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CProjectDetail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64DD2829994F00342269 /* CProjectDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CProjectDetail+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CProjectDetail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,9 +336,27 @@
 			isa = PBXGroup;
 			children = (
 				3E3A64D0282997AF00342269 /* CVMaker.xcdatamodeld */,
+				3E3A64D3282998FD00342269 /* CoreDataModels */,
 			);
 			name = CoreDataCache;
 			path = ImagePickerManager/CoreDataCache;
+			sourceTree = "<group>";
+		};
+		3E3A64D3282998FD00342269 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64D42829994F00342269 /* CSkills+CoreDataClass.swift */,
+				3E3A64D52829994F00342269 /* CSkills+CoreDataProperties.swift */,
+				3E3A64D62829994F00342269 /* CPersonalInfo+CoreDataClass.swift */,
+				3E3A64D72829994F00342269 /* CPersonalInfo+CoreDataProperties.swift */,
+				3E3A64D82829994F00342269 /* CEducationDetail+CoreDataClass.swift */,
+				3E3A64D92829994F00342269 /* CEducationDetail+CoreDataProperties.swift */,
+				3E3A64DA2829994F00342269 /* CWorkSummary+CoreDataClass.swift */,
+				3E3A64DB2829994F00342269 /* CWorkSummary+CoreDataProperties.swift */,
+				3E3A64DC2829994F00342269 /* CProjectDetail+CoreDataClass.swift */,
+				3E3A64DD2829994F00342269 /* CProjectDetail+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,20 +439,27 @@
 				3E3A64CA282977C500342269 /* ImagePickerManagerDelegates.swift in Sources */,
 				3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */,
 				3E3A64C22829760900342269 /* PIViewControllerMethods.swift in Sources */,
+				3E3A64DF2829994F00342269 /* CSkills+CoreDataProperties.swift in Sources */,
 				3E3A644F2828E32000342269 /* MainViewController.swift in Sources */,
+				3E3A64E22829994F00342269 /* CEducationDetail+CoreDataClass.swift in Sources */,
 				3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */,
 				3E3A646E282910FD00342269 /* CVItems.swift in Sources */,
 				3E3A64B228296C0D00342269 /* PDCollectionViewDelegates.swift in Sources */,
+				3E3A64E52829994F00342269 /* CWorkSummary+CoreDataProperties.swift in Sources */,
 				3E3A64972829675A00342269 /* SCollectionViewController.swift in Sources */,
 				3E3A646C2828F10E00342269 /* CVTableViewController.swift in Sources */,
 				3E3A648B28291DF100342269 /* WSLifeCycle.swift in Sources */,
 				3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */,
 				3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */,
+				3E3A64E32829994F00342269 /* CEducationDetail+CoreDataProperties.swift in Sources */,
 				3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */,
+				3E3A64E72829994F00342269 /* CProjectDetail+CoreDataProperties.swift in Sources */,
 				3E3A64D2282997AF00342269 /* CVMaker.xcdatamodeld in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
 				3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */,
 				3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */,
+				3E3A64E42829994F00342269 /* CWorkSummary+CoreDataClass.swift in Sources */,
+				3E3A64E62829994F00342269 /* CProjectDetail+CoreDataClass.swift in Sources */,
 				3E3A64C0282972CC00342269 /* PIViewControllerLifeCycle.swift in Sources */,
 				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
 				3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */,
@@ -423,12 +468,15 @@
 				3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */,
 				3E3A64AB28296B4800342269 /* PDCollectionViewController.swift in Sources */,
 				3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */,
+				3E3A64E12829994F00342269 /* CPersonalInfo+CoreDataProperties.swift in Sources */,
 				3E3A647C28291AFB00342269 /* BaseCollectionViewLifeCycle.swift in Sources */,
 				3E3A64B428296C1D00342269 /* PDCollectionViewCell.swift in Sources */,
+				3E3A64DE2829994F00342269 /* CSkills+CoreDataClass.swift in Sources */,
 				3E3A64A728296A3400342269 /* EDCollectionViewDelegates.swift in Sources */,
 				3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */,
 				3E3A64A328296A0700342269 /* EDLifeCycle.swift in Sources */,
 				3E3A644D2828E32000342269 /* SceneDelegate.swift in Sources */,
+				3E3A64E02829994F00342269 /* CPersonalInfo+CoreDataClass.swift in Sources */,
 				3E3A645F2828EB1400342269 /* Constants.swift in Sources */,
 				3E3A64A528296A2400342269 /* EDCellViewModel.swift in Sources */,
 				3E3A64C8282977B400342269 /* ImagePickerManagerMethods.swift in Sources */,
