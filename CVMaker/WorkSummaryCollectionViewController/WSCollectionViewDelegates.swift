@@ -18,6 +18,14 @@ extension WorkSummaryCollectionViewController: UICollectionViewDataSource {
         cell.removeButton.tag = indexPath.item
         cell.removeButton.addTarget(self, action: #selector(removeItemFromCollectionView(sender:)), for: .touchUpInside)
         
+        cell.companyNameTextField.delegate = self
+        cell.durationTextField.delegate = self
+        cell.descriptionTextView.delegate = self
+        
+        cell.companyNameTextField.tag = indexPath.item
+        cell.durationTextField.tag = indexPath.item
+        cell.descriptionTextView.tag = indexPath.item
+        
         return cell
     }
     

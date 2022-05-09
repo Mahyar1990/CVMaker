@@ -31,3 +31,26 @@ extension BaseCollectionViewController: UICollectionViewDelegateFlowLayout {
     }
     
 }
+
+
+// MARK: - Cell UITextField Delegates
+extension BaseCollectionViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        var point = textField.frame.origin
+        point.x = 0
+        point.y = CGFloat(textField.tag * 266)
+        myCollectionView.setContentOffset(point, animated: true)
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+    }
+}
+
+// MARK: - Cell UITextView Delegates
+extension BaseCollectionViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        var point = textView.frame.origin
+        point.x = 0
+        point.y = CGFloat(textView.tag * 274)
+        myCollectionView.setContentOffset(point, animated: true)
+    }
+}
