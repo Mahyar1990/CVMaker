@@ -33,8 +33,30 @@ class PersonalInfoViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        setupNavigationBar()
         setupKeyboardObservers()
         setupObjectsStyles()
+    }
+    
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.barTintColor = .systemBlue
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
+                                                                   NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 16)]
+        navigationController?.navigationBar.tintColor = .white
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.title = Constants.Main.personalInfo
+        
+        createAddBarButton()
+    }
+    
+    private func createAddBarButton() {
+        let saveButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.save,
+                                             target: self,
+                                             action: #selector(saveButtonSelected))
+        navigationItem.setRightBarButtonItems([saveButtonItem], animated: true)
+    }
+    
+    @objc func saveButtonSelected() {
     }
     
     private func setupKeyboardObservers() {
@@ -61,7 +83,7 @@ class PersonalInfoViewController: UIViewController {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-
+    
     
     // MARK: - setup Objects Styles
     func setupObjectsStyles() {
