@@ -40,4 +40,10 @@ enum Constants {
         static let defaultAvatar    = "UserAvatar"
     }
     
+    enum WorkSummary {
+        static let companyName  = "Company Name"
+        static let duration     = "Duration"
+        static let description  = "More Detail"
+    }
+    
 }
