@@ -35,3 +35,16 @@ extension WorkSummaryCollectionViewController: UICollectionViewDataSource {
         }
     }
 }
+
+
+// MARK: - UICollectionView Delegate FlowLayout
+extension WorkSummaryCollectionViewController {
+    //extension WorkSummaryCollectionViewController: UICollectionViewDelegateFlowLayout {
+    
+    // height of every cell of the collectionView
+    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width - 8, height: 254)
+    }
+    
+}
+
