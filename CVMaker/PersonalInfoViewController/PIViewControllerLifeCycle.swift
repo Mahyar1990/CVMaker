@@ -18,8 +18,37 @@ extension PersonalInfoViewController {
         setupObjectsStyles()
         setupView()
         
+        retrieveDataFromCache()
     }
     
+    func retrieveDataFromCache() {
+        DispatchQueue.global().async {
+            Cache.sharedInstance.retrieveAllPersonalInfoEntities { [weak self] item in
+                if let object = item {
+                    DispatchQueue.main.async { [weak self] in
+                        if let name = object.name {
+                            self?.nameTextField.text = name
+                        }
+                        if let address = object.address {
+                            self?.residenceAddressTextField2.text = address
+                        }
+                        if let cellPhone = object.cellPhone {
+                            self?.cellPhoneTextField.text = cellPhone
+                        }
+                        if let email = object.email {
+                            self?.emailTextField.text = email
+                        }
+                        if let experience = object.experience {
+                            self?.totalYearsOfExperienceTextField.text = experience
+                        }
+                        if let objective = object.objective {
+                            self?.careerObjectiveTextField.text = objective
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     private func setupNavigationBar() {
         navigationController?.navigationBar.barTintColor = .systemBlue
