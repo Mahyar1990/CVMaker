@@ -25,6 +25,21 @@ extension ProjectDetailsCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
+        for item in objectViewModels {
+            if let name = item.projectName {
+                if name != "" && !name.starts(with: " ") {
+                    DispatchQueue.global().async {
+                        Cache.sharedInstance.updateProjectDetailENtity(projectName:     name,
+                                                                       teamSize:        item.teamSize,
+                                                                       usedTechnologies: item.usedTechnologies,
+                                                                       role:            item.role,
+                                                                       summary:         item.projectSummary)
+                    }
+                } else {
+                    // handle error that 'ProjectName' is required
+                }
+            }
+        }
     }
     
 }
