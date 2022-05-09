@@ -36,6 +36,10 @@
 		3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649028291F8200342269 /* UITextFieldExtension.swift */; };
 		3E3A64932829200600342269 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64922829200600342269 /* UITextViewExtension.swift */; };
 		3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */; };
+		3E3A64972829675A00342269 /* SCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64962829675A00342269 /* SCollectionViewController.swift */; };
+		3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */; };
+		3E3A649C2829679B00342269 /* SCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */; };
+		3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649D282967B200342269 /* SCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		3E3A649028291F8200342269 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		3E3A64922829200600342269 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A64962829675A00342269 /* SCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A649D282967B200342269 /* SCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +204,20 @@
 				3E3A648C28291EAB00342269 /* WSCellViewModel.swift */,
 				3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */,
 				3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */,
+				3E3A64982829676400342269 /* SkillsCollectionViewController */,
 			);
 			path = WorkSummaryCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64982829676400342269 /* SkillsCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64962829675A00342269 /* SCollectionViewController.swift */,
+				3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */,
+				3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */,
+				3E3A649D282967B200342269 /* SCollectionViewCell.swift */,
+			);
+			path = SkillsCollectionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3A64612828EBBE00342269 /* FontExtension.swift in Sources */,
+				3E3A649C2829679B00342269 /* SCollectionViewDelegates.swift in Sources */,
 				3E3A648828291DBB00342269 /* WSCollectionViewController.swift in Sources */,
 				3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */,
 				3E3A647E28291B2B00342269 /* UILabelExtension.swift in Sources */,
@@ -277,12 +298,15 @@
 				3E3A644F2828E32000342269 /* MainViewController.swift in Sources */,
 				3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */,
 				3E3A646E282910FD00342269 /* CVItems.swift in Sources */,
+				3E3A64972829675A00342269 /* SCollectionViewController.swift in Sources */,
 				3E3A646C2828F10E00342269 /* CVTableViewController.swift in Sources */,
 				3E3A648B28291DF100342269 /* WSLifeCycle.swift in Sources */,
 				3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */,
 				3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */,
 				3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
+				3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */,
+				3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */,
 				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
 				3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */,
 				3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */,
