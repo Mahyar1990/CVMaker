@@ -44,6 +44,9 @@ extension EducationDetailsCollectionViewController {
                     }
                 } else {
                     // handle error that 'ClassName' is required
+                    showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                              alertMessage: "The ClassName textfield should not be empty!",
+                              okActionText: Constants.Alert.ok)
                 }
             }
         }
