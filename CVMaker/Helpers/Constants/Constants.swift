@@ -50,5 +50,12 @@ enum Constants {
         static let passingYear  = "Passing Year"
         static let percentage   = "Percentage"
     }
+    enum ProjectDetail {
+        static let projectName      = "Project Name"
+        static let teamSize         = "Team Size"
+        static let projectSummary   = "Project Summary"
+        static let usedTechnologies = "Technology Used"
+        static let role             = "Role"
+    }
     
 }
