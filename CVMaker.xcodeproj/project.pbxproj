@@ -54,6 +54,8 @@
 		3E3A64BA28296EF400342269 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64B928296EF400342269 /* UIImageViewExtension.swift */; };
 		3E3A64BC282970D400342269 /* PIViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64BB282970D400342269 /* PIViewControllerDelegates.swift */; };
 		3E3A64BE2829726900342269 /* PIViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64BD2829726900342269 /* PIViewControllerView.swift */; };
+		3E3A64C0282972CC00342269 /* PIViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64BF282972CC00342269 /* PIViewControllerLifeCycle.swift */; };
+		3E3A64C22829760900342269 /* PIViewControllerMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C12829760900342269 /* PIViewControllerMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,8 @@
 		3E3A64B928296EF400342269 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3E3A64BB282970D400342269 /* PIViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewControllerDelegates.swift; sourceTree = "<group>"; };
 		3E3A64BD2829726900342269 /* PIViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewControllerView.swift; sourceTree = "<group>"; };
+		3E3A64BF282972CC00342269 /* PIViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewControllerLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64C12829760900342269 /* PIViewControllerMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewControllerMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +146,10 @@
 				3E3A644C2828E32000342269 /* SceneDelegate.swift */,
 				3E3A646A2828EF3300342269 /* MainViewController */,
 				3E3A64B728296E8000342269 /* PIViewController.swift */,
+				3E3A64BF282972CC00342269 /* PIViewControllerLifeCycle.swift */,
 				3E3A64BD2829726900342269 /* PIViewControllerView.swift */,
 				3E3A64BB282970D400342269 /* PIViewControllerDelegates.swift */,
+				3E3A64C12829760900342269 /* PIViewControllerMethods.swift */,
 				3E3A64752829181700342269 /* CVTableViewController */,
 				3E3A648528291D9500342269 /* BaseCollectionViewController */,
 				3E3A648928291DD800342269 /* WorkSummaryCollectionViewController */,
@@ -356,6 +362,7 @@
 				3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */,
 				3E3A647E28291B2B00342269 /* UILabelExtension.swift in Sources */,
 				3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */,
+				3E3A64C22829760900342269 /* PIViewControllerMethods.swift in Sources */,
 				3E3A644F2828E32000342269 /* MainViewController.swift in Sources */,
 				3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */,
 				3E3A646E282910FD00342269 /* CVItems.swift in Sources */,
@@ -369,6 +376,7 @@
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
 				3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */,
 				3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */,
+				3E3A64C0282972CC00342269 /* PIViewControllerLifeCycle.swift in Sources */,
 				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
 				3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */,
 				3E3A64BE2829726900342269 /* PIViewControllerView.swift in Sources */,

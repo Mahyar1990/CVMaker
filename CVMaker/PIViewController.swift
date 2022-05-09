@@ -29,15 +29,6 @@ class PersonalInfoViewController: UIViewController {
     let careerObjectiveTextField = TextField()
     let totalYearsOfExperienceTextField = TextField()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = .white
-        setupNavigationBar()
-        setupKeyboardObservers()
-        setupObjectsStyles()
-        setupView()
-    }
     
     private func setupNavigationBar() {
         navigationController?.navigationBar.barTintColor = .systemBlue
@@ -57,32 +48,12 @@ class PersonalInfoViewController: UIViewController {
         navigationItem.setRightBarButtonItems([saveButtonItem], animated: true)
     }
     
-    @objc func saveButtonSelected() {
-    }
-    
     private func setupKeyboardObservers() {
         self.hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillHide(notification:)),
                                                name: UIResponder.keyboardWillHideNotification,
                                                object: nil)
-    }
-    
-    // MARK: - Keyboard methods
-    @objc func keyboardWillHide(notification: NSNotification) {
-        let point = CGPoint(x: 0, y: 0)
-        scrollView.setContentOffset(point, animated: true)
-    }
-    
-    func hideKeyboardWhenTappedAround() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
     }
     
     
@@ -148,11 +119,6 @@ class PersonalInfoViewController: UIViewController {
         textview.layer.borderColor = UIColor.lightGray.cgColor
         textview.layer.cornerRadius = 4
         textview.delegate = self
-    }
-    
-    
-    @objc func editImageButtonDidSelected() {
-        
     }
     
 }
