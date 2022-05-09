@@ -21,6 +21,8 @@
 		3E3A646C2828F10E00342269 /* CVTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A646B2828F10E00342269 /* CVTableViewController.swift */; };
 		3E3A646E282910FD00342269 /* CVItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A646D282910FD00342269 /* CVItems.swift */; };
 		3E3A6470282911C000342269 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A646F282911C000342269 /* UIImageExtension.swift */; };
+		3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */; };
+		3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		3E3A646B2828F10E00342269 /* CVTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewController.swift; sourceTree = "<group>"; };
 		3E3A646D282910FD00342269 /* CVItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVItems.swift; sourceTree = "<group>"; };
 		3E3A646F282911C000342269 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewControllerLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewControllerDelegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,7 @@
 				3E3A644A2828E32000342269 /* AppDelegate.swift */,
 				3E3A644C2828E32000342269 /* SceneDelegate.swift */,
 				3E3A646A2828EF3300342269 /* MainViewController */,
-				3E3A646B2828F10E00342269 /* CVTableViewController.swift */,
+				3E3A64752829181700342269 /* CVTableViewController */,
 				3E3A646D282910FD00342269 /* CVItems.swift */,
 				3E3A645E2828EB1400342269 /* Constants.swift */,
 				3E3A64602828EBBE00342269 /* FontExtension.swift */,
@@ -97,6 +101,16 @@
 				3E3A64682828EEBE00342269 /* MViewControllerViewMethods.swift */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64752829181700342269 /* CVTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A646B2828F10E00342269 /* CVTableViewController.swift */,
+				3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */,
+				3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */,
+			);
+			path = CVTableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +183,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3A64612828EBBE00342269 /* FontExtension.swift in Sources */,
+				3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */,
+				3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */,
 				3E3A644F2828E32000342269 /* MainViewController.swift in Sources */,
 				3E3A646E282910FD00342269 /* CVItems.swift in Sources */,
 				3E3A646C2828F10E00342269 /* CVTableViewController.swift in Sources */,
