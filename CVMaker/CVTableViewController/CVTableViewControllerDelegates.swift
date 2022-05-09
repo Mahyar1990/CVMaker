@@ -23,7 +23,27 @@ extension CVTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                
+        
+        switch indexPath.item {
+        case 0:
+            let vc = PersonalInfoViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = WorkSummaryCollectionViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 2:
+            let vc = SkillsCollectionViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = EducationDetailsCollectionViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 4:
+            let vc = ProjectDetailsCollectionViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        default:
+            print("")
+        }
+        
     }
     
 }
