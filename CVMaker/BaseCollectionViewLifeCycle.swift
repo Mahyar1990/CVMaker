@@ -16,6 +16,7 @@ extension BaseCollectionViewController {
         
         setupNavigationBar()
         setupPageTitleStyle()
+        setupCollectionView()
         setupView()
     }
     
@@ -24,6 +25,10 @@ extension BaseCollectionViewController {
         pageTitleLabel.textAlignment = .center
     }
     
+    private func setupCollectionView() {
+        myCollectionView.backgroundColor = UIColor(white: 0.9, alpha: 0.9)
+        myCollectionView.delegate = self
+    }
     
     private func setupNavigationBar() {
         navigationController?.navigationBar.barTintColor = .systemBlue

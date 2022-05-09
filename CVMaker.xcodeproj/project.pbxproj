@@ -27,6 +27,8 @@
 		3E3A647C28291AFB00342269 /* BaseCollectionViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */; };
 		3E3A647E28291B2B00342269 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647D28291B2B00342269 /* UILabelExtension.swift */; };
 		3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */; };
+		3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */; };
+		3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewLifeCycle.swift; sourceTree = "<group>"; };
 		3E3A647D28291B2B00342269 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewControllerView.swift; sourceTree = "<group>"; };
+		3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewControllerDelegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */,
 				3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */,
 				3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */,
+				3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */,
 				3E3A647828291A0900342269 /* Helpers */,
 				3E3A64532828E32300342269 /* Assets.xcassets */,
 				3E3A64552828E32300342269 /* LaunchScreen.storyboard */,
@@ -145,6 +150,7 @@
 			children = (
 				3E3A6476282919EE00342269 /* Constants */,
 				3E3A6477282919F800342269 /* Extensions */,
+				3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -228,9 +234,11 @@
 				3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
 				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
+				3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */,
 				3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */,
 				3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */,
 				3E3A647C28291AFB00342269 /* BaseCollectionViewLifeCycle.swift in Sources */,
+				3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */,
 				3E3A644D2828E32000342269 /* SceneDelegate.swift in Sources */,
 				3E3A645F2828EB1400342269 /* Constants.swift in Sources */,
 				3E3A64632828ED4800342269 /* UIButtonExtension.swift in Sources */,
