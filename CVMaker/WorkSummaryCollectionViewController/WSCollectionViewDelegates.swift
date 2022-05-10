@@ -23,16 +23,17 @@ extension WorkSummaryCollectionViewController: UICollectionViewDataSource {
         cell.descriptionTextView.delegate = self
         
         cell.companyNameTextField.tag = indexPath.item
+        cell.companyNameTextField.accessibilityValue = Constants.WorkSummary.companyName
         cell.durationTextField.tag = indexPath.item
+        cell.durationTextField.accessibilityValue = Constants.WorkSummary.duration
         cell.descriptionTextView.tag = indexPath.item
+        cell.descriptionTextView.accessibilityValue = Constants.WorkSummary.description
         
         return cell
     }
     
     @objc func removeItemFromCollectionView(sender: UIButton) {
-        if (objectViewModels.count != 1) {
-            objectViewModels.remove(at: sender.tag)
-        }
+        objectViewModels.remove(at: sender.tag)
     }
 }
 
@@ -48,3 +49,23 @@ extension WorkSummaryCollectionViewController {
     
 }
 
+extension WorkSummaryCollectionViewController {
+    
+    override func textFieldDidEndEditing(_ textField: UITextField) {
+        if let txt = textField.text {
+            switch textField.accessibilityValue {
+            case Constants.WorkSummary.companyName:
+                objectViewModels[textField.tag].companyName = txt
+            case Constants.WorkSummary.duration:
+                objectViewModels[textField.tag].duration = txt
+            default: return
+            }
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if let txt = textView.text, textView.accessibilityValue == Constants.WorkSummary.description {
+            objectViewModels[textView.tag].description = txt
+        }
+    }
+}

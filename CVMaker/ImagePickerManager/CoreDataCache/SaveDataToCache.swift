@@ -171,6 +171,21 @@ extension Cache {
         }
     }
     
+    func updateWorkSummaryEntities(objects: [WorkSummaryCellViewModel]) {
+        deleteAllWorkSummaryEntity()
+        saveWorkSummaryEntities(withObjects: objects)
+    }
+    private func saveWorkSummaryEntities(withObjects objects: [WorkSummaryCellViewModel]) {
+        for item in objects {
+            let theObjectEntity = NSEntityDescription.entity(forEntityName: "CWorkSummary", in: context)
+            let pi = CWorkSummary(entity: theObjectEntity!, insertInto: context)
+            pi.companyName  = item.companyName
+            pi.duration     = item.duration
+            pi.descriptions = item.description
+            saveContext(subject: "Create CWorkSummary")
+        }
+    }
+    
     
     // MARK: - save/update Skills
     func updateSkillsEntity(writeSkill: String) {
