@@ -19,10 +19,15 @@ extension ExportPDF {
     
     private func addDataToPDF()  {
         pdf.addText("My Resume")
+        pdf.addLineSpace(10)
         pdf.addLineSeparator()
+        pdf.addLineSpace(10)
         
         pdf.addText(Constants.Main.personalInfo)
-        pdf.addImage(userImage ?? UIImage(named: Constants.Images.defaultAvatar)!)
+        pdf.addLineSpace(10)
+        let image = resizeImage(image: userImage ?? UIImage(named: Constants.Images.defaultAvatar)!)
+        pdf.addImage(image)
+        pdf.addLineSpace(10)
         pdf.addText("\(Constants.PersonalInfo.name) : \(personalInfo.name ?? "")")
         pdf.addText("\(Constants.PersonalInfo.cellPhone) : \(personalInfo.cellPhone ?? "")")
         pdf.addText("\(Constants.PersonalInfo.email) : \(personalInfo.email ?? "")")
@@ -30,7 +35,9 @@ extension ExportPDF {
         pdf.addText("\(Constants.PersonalInfo.experience) : \(personalInfo.experience ?? "")")
         pdf.addText("\(Constants.PersonalInfo.objective) : \(personalInfo.objective ?? "")")
         
+        pdf.addLineSpace(20)
         pdf.addLineSeparator()
+        pdf.addLineSpace(20)
         
         pdf.addText(Constants.Main.workSummary)
         if let ws = workSummaries {
@@ -42,7 +49,9 @@ extension ExportPDF {
             }
         }
         
+        pdf.addLineSpace(20)
         pdf.addLineSeparator()
+        pdf.addLineSpace(20)
         
         pdf.addText(Constants.Main.projectDetails)
         if let pd = projectDetails {
@@ -56,7 +65,9 @@ extension ExportPDF {
             }
         }
         
+        pdf.addLineSpace(20)
         pdf.addLineSeparator()
+        pdf.addLineSpace(20)
         
         pdf.addText(Constants.Main.educationDetails)
         if let ed = educationDetails {
@@ -68,7 +79,9 @@ extension ExportPDF {
             }
         }
         
+        pdf.addLineSpace(20)
         pdf.addLineSeparator()
+        pdf.addLineSpace(20)
         
         pdf.addText(Constants.Main.educationDetails)
         if let sk = skills {
@@ -77,7 +90,43 @@ extension ExportPDF {
             }
         }
         
-        pdf.addLineSeparator()
+    }
+    
+    
+    
+    private func resizeImage(image: UIImage) -> UIImage {
+        let maxSize = CGFloat(88)
+        
+        if image.size.height >= maxSize && image.size.width >= maxSize {
+            UIGraphicsBeginImageContext(CGSize(width: maxSize, height: maxSize))
+            image.draw(in: CGRect(x: 0, y: 0, width: maxSize, height: maxSize))
+            
+            let newImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            return newImage!
+        }
+        else if image.size.height >= maxSize && image.size.width < maxSize {
+            UIGraphicsBeginImageContext(CGSize(width: image.size.width, height: maxSize))
+            image.draw(in: CGRect(x: 0, y: 0, width: image.size.width, height: maxSize))
+            
+            let newImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            return newImage!
+        }
+        else if image.size.width >= maxSize && image.size.height < maxSize {
+            UIGraphicsBeginImageContext(CGSize(width: maxSize, height: image.size.height))
+            image.draw(in: CGRect(x: 0, y: 0, width: maxSize, height: image.size.height))
+            
+            let newImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            return newImage!
+        }
+        else {
+            return image
+        }
     }
     
 }
