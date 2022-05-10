@@ -10,7 +10,9 @@ import UIKit
 class MainViewController: UIViewController {
     
     let createButton = UIButton()
-//    let editButton = UIButton()
+    let downloadPDFButton = UIButton()
+    
+    var activityController: UIActivityViewController?
     
 }
 

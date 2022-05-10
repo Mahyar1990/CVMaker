@@ -35,8 +35,12 @@ extension MainViewController {
                 DispatchQueue.main.async {  [weak self] in
                     if let _ = item {
                         self?.createButton.setTitle(Constants.Main.editCV, for: UIControl.State.normal)
+                        self?.downloadPDFButton.isHidden = false
+                        self?.downloadPDFButton.isEnabled = true
                     } else {
                         self?.createButton.setTitle(Constants.Main.createCV, for: UIControl.State.normal)
+                        self?.downloadPDFButton.isHidden = true
+                        self?.downloadPDFButton.isEnabled = false
                     }
                 }
             }

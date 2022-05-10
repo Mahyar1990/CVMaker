@@ -19,6 +19,7 @@ enum Constants {
         static let appTitle = "CV Maker"
         static let createCV = "Create CV"
         static let editCV   = "Edit CV"
+        static let downloadCV   = "Download CV"
         
         static let personalInfo     = "Personal Info"
         static let workSummary      = "Work Summary"
