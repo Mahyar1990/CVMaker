@@ -83,113 +83,169 @@ extension Cache {
     
     
     // MARK: - save/update ProjectDetail
-    func updateProjectDetailENtity(projectName:         String,
-                                   teamSize:            String?,
-                                   usedTechnologies:    String?,
-                                   role:                String?,
-                                   summary:             String?) {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CProjectDetail")
-        do {
-            if let result = try context.fetch(fetchRequest) as? [CProjectDetail] {
-                // find the object on the cache
-                if (result.count > 0) {
-                    result.first!.projectName      = projectName
-                    result.first!.projectSummary   = summary
-                    result.first!.role             = role
-                    result.first!.teamSize         = teamSize
-                    result.first!.usedTechnologies = usedTechnologies
-                    saveContext(subject: "Update CProjectDetail")
-                } else {
-                    let theObjectEntity = NSEntityDescription.entity(forEntityName: "CProjectDetail", in: context)
-                    let pi = CProjectDetail(entity: theObjectEntity!, insertInto: context)
-                    pi.projectName      = projectName
-                    pi.projectSummary   = summary
-                    pi.role             = role
-                    pi.teamSize         = teamSize
-                    pi.usedTechnologies = usedTechnologies
-                    saveContext(subject: "Create CProjectDetail")
-                }
-            }
-        } catch {
-            fatalError("Error on fetching list of CProjectDetail")
+//    func updateProjectDetailENtity(projectName:         String,
+//                                   teamSize:            String?,
+//                                   usedTechnologies:    String?,
+//                                   role:                String?,
+//                                   summary:             String?) {
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CProjectDetail")
+//        do {
+//            if let result = try context.fetch(fetchRequest) as? [CProjectDetail] {
+//                // find the object on the cache
+//                if (result.count > 0) {
+//                    result.first!.projectName      = projectName
+//                    result.first!.projectSummary   = summary
+//                    result.first!.role             = role
+//                    result.first!.teamSize         = teamSize
+//                    result.first!.usedTechnologies = usedTechnologies
+//                    saveContext(subject: "Update CProjectDetail")
+//                } else {
+//                    let theObjectEntity = NSEntityDescription.entity(forEntityName: "CProjectDetail", in: context)
+//                    let pi = CProjectDetail(entity: theObjectEntity!, insertInto: context)
+//                    pi.projectName      = projectName
+//                    pi.projectSummary   = summary
+//                    pi.role             = role
+//                    pi.teamSize         = teamSize
+//                    pi.usedTechnologies = usedTechnologies
+//                    saveContext(subject: "Create CProjectDetail")
+//                }
+//            }
+//        } catch {
+//            fatalError("Error on fetching list of CProjectDetail")
+//        }
+//    }
+    func updateProjectDetailENtity(objects: [ProjectDetailCellViewModel]) {
+        deleteAllProjectDetailEntity()
+        saveProjectDetailEntities(withObjects: objects)
+    }
+    private func saveProjectDetailEntities(withObjects objects: [ProjectDetailCellViewModel]) {
+        for item in objects {
+            let theObjectEntity = NSEntityDescription.entity(forEntityName: "CProjectDetail", in: context)
+            let pi = CProjectDetail(entity: theObjectEntity!, insertInto: context)
+            pi.projectName      = item.projectName
+            pi.projectSummary   = item.projectSummary
+            pi.role             = item.role
+            pi.teamSize         = item.teamSize
+            pi.usedTechnologies = item.usedTechnologies
+            saveContext(subject: "Create CProjectDetail")
         }
     }
     
     
     // MARK: - save/update EducationDetail
-    func updateEducationDetailEntity(clasName:      String,
-                                     passingYear:   String?,
-                                     percentage:    String?) {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CEducationDetail")
-        do {
-            if let result = try context.fetch(fetchRequest) as? [CEducationDetail] {
-                // find the object on the cache
-                if (result.count > 0) {
-                    result.first!.clasName      = clasName
-                    result.first!.passingYear   = passingYear
-                    result.first!.percentage    = percentage
-                    saveContext(subject: "Update CEducationDetail")
-                } else {
-                    let theObjectEntity = NSEntityDescription.entity(forEntityName: "CEducationDetail", in: context)
-                    let pi = CEducationDetail(entity: theObjectEntity!, insertInto: context)
-                    pi.clasName     = clasName
-                    pi.passingYear  = passingYear
-                    pi.percentage   = percentage
-                    saveContext(subject: "Create CEducationDetail")
-                }
-            }
-        } catch {
-            fatalError("Error on fetching list of CEducationDetail")
+//    func updateEducationDetailEntity(clasName:      String,
+//                                     passingYear:   String?,
+//                                     percentage:    String?) {
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CEducationDetail")
+//        do {
+//            if let result = try context.fetch(fetchRequest) as? [CEducationDetail] {
+//                // find the object on the cache
+//                if (result.count > 0) {
+//                    result.first!.clasName      = clasName
+//                    result.first!.passingYear   = passingYear
+//                    result.first!.percentage    = percentage
+//                    saveContext(subject: "Update CEducationDetail")
+//                } else {
+//                    let theObjectEntity = NSEntityDescription.entity(forEntityName: "CEducationDetail", in: context)
+//                    let pi = CEducationDetail(entity: theObjectEntity!, insertInto: context)
+//                    pi.clasName     = clasName
+//                    pi.passingYear  = passingYear
+//                    pi.percentage   = percentage
+//                    saveContext(subject: "Create CEducationDetail")
+//                }
+//            }
+//        } catch {
+//            fatalError("Error on fetching list of CEducationDetail")
+//        }
+//    }
+    func updateEducationDetailEntities(objects: [EducationDetailCellViewModel]) {
+        deleteAllEducationDetailEntity()
+        saveEducationDetailEntities(withObjects: objects)
+    }
+    private func saveEducationDetailEntities(withObjects objects: [EducationDetailCellViewModel]) {
+        for item in objects {
+            let theObjectEntity = NSEntityDescription.entity(forEntityName: "CEducationDetail", in: context)
+            let pi = CEducationDetail(entity: theObjectEntity!, insertInto: context)
+            pi.clasName     = item.className
+            pi.passingYear  = item.passingYear
+            pi.percentage   = item.percentage
+            saveContext(subject: "Create CEducationDetail")
         }
     }
     
     
     // MARK: - save/update WorkSummary
-    func updateWorkSummaryEntoty(companyName:   String,
-                                 duration:      String?,
-                                 descriptions:  String?) {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CWorkSummary")
-        do {
-            if let result = try context.fetch(fetchRequest) as? [CWorkSummary] {
-                // find the object on the cache
-                if (result.count > 0) {
-                    result.first!.companyName   = companyName
-                    result.first!.duration      = duration
-                    result.first!.descriptions  = descriptions
-                    saveContext(subject: "Update CWorkSummary")
-                } else {
-                    let theObjectEntity = NSEntityDescription.entity(forEntityName: "CWorkSummary", in: context)
-                    let pi = CWorkSummary(entity: theObjectEntity!, insertInto: context)
-                    pi.companyName  = companyName
-                    pi.duration     = duration
-                    pi.descriptions = descriptions
-                    saveContext(subject: "Create CWorkSummary")
-                }
-            }
-        } catch {
-            fatalError("Error on fetching list of CWorkSummary")
+//    func updateWorkSummaryEntoty(companyName:   String,
+//                                 duration:      String?,
+//                                 descriptions:  String?) {
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CWorkSummary")
+//        do {
+//            if let result = try context.fetch(fetchRequest) as? [CWorkSummary] {
+//                // find the object on the cache
+//                if (result.count > 0) {
+//                    result.first!.companyName   = companyName
+//                    result.first!.duration      = duration
+//                    result.first!.descriptions  = descriptions
+//                    saveContext(subject: "Update CWorkSummary")
+//                } else {
+//                    let theObjectEntity = NSEntityDescription.entity(forEntityName: "CWorkSummary", in: context)
+//                    let pi = CWorkSummary(entity: theObjectEntity!, insertInto: context)
+//                    pi.companyName  = companyName
+//                    pi.duration     = duration
+//                    pi.descriptions = descriptions
+//                    saveContext(subject: "Create CWorkSummary")
+//                }
+//            }
+//        } catch {
+//            fatalError("Error on fetching list of CWorkSummary")
+//        }
+//    }
+    func updateWorkSummaryEntities(objects: [WorkSummaryCellViewModel]) {
+        deleteAllWorkSummaryEntity()
+        saveWorkSummaryEntities(withObjects: objects)
+    }
+    private func saveWorkSummaryEntities(withObjects objects: [WorkSummaryCellViewModel]) {
+        for item in objects {
+            let theObjectEntity = NSEntityDescription.entity(forEntityName: "CWorkSummary", in: context)
+            let pi = CWorkSummary(entity: theObjectEntity!, insertInto: context)
+            pi.companyName  = item.companyName
+            pi.duration     = item.duration
+            pi.descriptions = item.description
+            saveContext(subject: "Create CWorkSummary")
         }
     }
     
     
     // MARK: - save/update Skills
-    func updateSkillsEntity(writeSkill: String) {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CSkills")
-        do {
-            if let result = try context.fetch(fetchRequest) as? [CSkills] {
-                // find the object on the cache
-                if (result.count > 0) {
-                    result.first!.writeSkill    = writeSkill
-                    saveContext(subject: "Update CSkills")
-                } else {
-                    let theObjectEntity = NSEntityDescription.entity(forEntityName: "CSkills", in: context)
-                    let pi = CSkills(entity: theObjectEntity!, insertInto: context)
-                    pi.writeSkill  = writeSkill
-                    saveContext(subject: "Create CSkills")
-                }
-            }
-        } catch {
-            fatalError("Error on fetching list of CSkills")
+//    func updateSkillsEntity(writeSkill: String) {
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CSkills")
+//        do {
+//            if let result = try context.fetch(fetchRequest) as? [CSkills] {
+//                // find the object on the cache
+//                if (result.count > 0) {
+//                    result.first!.writeSkill    = writeSkill
+//                    saveContext(subject: "Update CSkills")
+//                } else {
+//                    let theObjectEntity = NSEntityDescription.entity(forEntityName: "CSkills", in: context)
+//                    let pi = CSkills(entity: theObjectEntity!, insertInto: context)
+//                    pi.writeSkill  = writeSkill
+//                    saveContext(subject: "Create CSkills")
+//                }
+//            }
+//        } catch {
+//            fatalError("Error on fetching list of CSkills")
+//        }
+//    }
+    func updateSkillsEntities(objects: [String]) {
+        deleteAllSkillsEntity()
+        saveSkillEntities(withObjects: objects)
+    }
+    private func saveSkillEntities(withObjects objects : [String]) {
+        for item in objects {
+            let theObjectEntity = NSEntityDescription.entity(forEntityName: "CSkills", in: context)
+            let pi = CSkills(entity: theObjectEntity!, insertInto: context)
+            pi.writeSkill = item
+            saveContext(subject: "Create CSkills")
         }
     }
     

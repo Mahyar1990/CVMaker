@@ -24,12 +24,18 @@ class EducationDetailCollectionViewCell: BaseCollectionViewCell {
         didSet {
             if let name = educationDetailsCellViewModel.className {
                 classTextField.text = name
+            } else {
+                classTextField.text = ""
             }
             if let duration = educationDetailsCellViewModel.passingYear {
                 passingYearTextField.text =  duration
+            } else {
+                passingYearTextField.text =  ""
             }
             if let description = educationDetailsCellViewModel.percentage {
                 percentageTextField.text = description
+            } else {
+                percentageTextField.text = ""
             }
         }
     }

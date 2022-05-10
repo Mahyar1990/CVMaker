@@ -30,18 +30,28 @@ class ProjectDetailCollectionViewCell: BaseCollectionViewCell {
         didSet {
             if let projectName = projectDetailsCellViewModel.projectName {
                 projectNameTextField.text = projectName
+            } else {
+                projectNameTextField.text = ""
             }
             if let teamSize = projectDetailsCellViewModel.teamSize {
                 teamSizeTextField.text =  teamSize
+            } else {
+                teamSizeTextField.text =  ""
             }
             if let projectSummary = projectDetailsCellViewModel.projectSummary {
                 projectSummaryTextView.text = projectSummary
+            } else {
+                projectSummaryTextView.text = ""
             }
             if let usedTechnologies = projectDetailsCellViewModel.usedTechnologies {
                 usedTechnologiesTextField.text = usedTechnologies
+            } else {
+                usedTechnologiesTextField.text = ""
             }
             if let role = projectDetailsCellViewModel.role {
                 usedTechnologiesTextField.text = role
+            } else {
+                usedTechnologiesTextField.text = ""
             }
         }
     }

@@ -36,21 +36,23 @@ extension WorkSummaryCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
+        var canSaveData = true
         for item in objectViewModels {
             if let name = item.companyName {
-                if name != "" && !name.starts(with: " ") {
-                    DispatchQueue.global().async {
-                        Cache.sharedInstance.updateWorkSummaryEntoty(companyName: name,
-                                                                     duration: item.duration,
-                                                                     descriptions: item.description)
-                    }
-                } else {
-                    // handle error that 'companyName' is required
-                    showAlert(alertTitle: Constants.Alert.errorOnSavingData,
-                              alertMessage: "The CompanyName textfield should not be empty!",
-                              okActionText: Constants.Alert.ok)
+                if name == "" || name.starts(with: " ") {
+                    canSaveData = false
                 }
             }
+        }
+        if canSaveData {
+            let objects = objectViewModels
+            DispatchQueue.global().async {
+                Cache.sharedInstance.updateWorkSummaryEntities(objects: objects)
+            }
+        } else {
+            showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                      alertMessage: "The CompanyName textfield should not be empty!",
+                      okActionText: Constants.Alert.ok)
         }
     }
     

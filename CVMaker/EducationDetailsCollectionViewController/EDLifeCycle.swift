@@ -34,21 +34,24 @@ extension EducationDetailsCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
+        var canSaveData = true
         for item in objectViewModels {
             if let name = item.className {
-                if name != "" && !name.starts(with: " ") {
-                    DispatchQueue.global().async {
-                        Cache.sharedInstance.updateEducationDetailEntity(clasName:      name,
-                                                                         passingYear:   item.passingYear,
-                                                                         percentage:    item.percentage)
-                    }
-                } else {
-                    // handle error that 'ClassName' is required
-                    showAlert(alertTitle: Constants.Alert.errorOnSavingData,
-                              alertMessage: "The ClassName textfield should not be empty!",
-                              okActionText: Constants.Alert.ok)
+                if name == "" || name.starts(with: " ") {
+                    canSaveData = false
                 }
             }
+        }
+        if canSaveData {
+            let objects = objectViewModels
+            DispatchQueue.global().async {
+                Cache.sharedInstance.updateEducationDetailEntities(objects: objects)
+            }
+        } else {
+            // handle error that 'ClassName' is required
+            showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                      alertMessage: "The ClassName textfield should not be empty!",
+                      okActionText: Constants.Alert.ok)
         }
     }
     
