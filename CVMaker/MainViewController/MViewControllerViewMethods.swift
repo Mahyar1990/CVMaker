@@ -5,7 +5,7 @@
 //  Created by Mahyar Jananeh on 5/9/22.
 //
 
-import Foundation
+import UIKit
 
 extension MainViewController {
     
@@ -14,8 +14,20 @@ extension MainViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @objc func editButtonDidSelected() {
-        
+    @objc func downloadPDFButtonDidSelected() {
+        let pdfObject = ExportPDF()
+        let pdfData = pdfObject.generatePDF()
+        activityController = UIActivityViewController(activityItems: [pdfData], applicationActivities: nil)
+        activityController?.completionWithItemsHandler = { (activityType, completed, _, err) in
+            if ( (completed) && (activityType == UIActivity.ActivityType.saveToCameraRoll) ) || (activityType == UIActivity.ActivityType.assignToContact) {
+                self.activityController?.dismiss(animated: true, completion: nil)
+            } else {
+                self.activityController?.dismiss(animated: true, completion: nil)
+            }
+        }
+        activityController?.popoverPresentationController?.sourceView = self.view
+        self.present(activityController!, animated: true, completion: {
+        })
     }
     
 }

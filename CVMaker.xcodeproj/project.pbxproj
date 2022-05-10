@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		398056307E26577A6D5ACF2F /* Pods_CVMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19252EBB7C35E6073DB1F5F /* Pods_CVMaker.framework */; };
 		3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A644A2828E32000342269 /* AppDelegate.swift */; };
 		3E3A644D2828E32000342269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A644C2828E32000342269 /* SceneDelegate.swift */; };
 		3E3A644F2828E32000342269 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A644E2828E32000342269 /* MainViewController.swift */; };
@@ -75,6 +76,9 @@
 		3E3A64ED28299D6500342269 /* RetrieveDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */; };
 		3E3A64EF28299E8100342269 /* DeleteDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */; };
 		3E3A64F128299F0800342269 /* SaveDataToCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64F028299F0800342269 /* SaveDataToCache.swift */; };
+		3E3A64F32829F80500342269 /* ExportPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64F22829F80500342269 /* ExportPDF.swift */; };
+		3E3A64F5282A026000342269 /* ExportPdfGetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64F4282A025F00342269 /* ExportPdfGetData.swift */; };
+		3E3A64F7282A02F100342269 /* ExportPdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64F6282A02F100342269 /* ExportPdfView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +152,12 @@
 		3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveDataFromCache.swift; sourceTree = "<group>"; };
 		3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDataFromCache.swift; sourceTree = "<group>"; };
 		3E3A64F028299F0800342269 /* SaveDataToCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDataToCache.swift; sourceTree = "<group>"; };
+		3E3A64F22829F80500342269 /* ExportPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPDF.swift; sourceTree = "<group>"; };
+		3E3A64F4282A025F00342269 /* ExportPdfGetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPdfGetData.swift; sourceTree = "<group>"; };
+		3E3A64F6282A02F100342269 /* ExportPdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPdfView.swift; sourceTree = "<group>"; };
+		980FA1994675AE5814368196 /* Pods-CVMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVMaker.debug.xcconfig"; path = "Target Support Files/Pods-CVMaker/Pods-CVMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		E19252EBB7C35E6073DB1F5F /* Pods_CVMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BC5CFB4399995462D5C9D3 /* Pods-CVMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVMaker.release.xcconfig"; path = "Target Support Files/Pods-CVMaker/Pods-CVMaker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,17 +165,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398056307E26577A6D5ACF2F /* Pods_CVMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F49D6A45CE0F41316DF2FED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				980FA1994675AE5814368196 /* Pods-CVMaker.debug.xcconfig */,
+				F8BC5CFB4399995462D5C9D3 /* Pods-CVMaker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3E3A643E2828E32000342269 = {
 			isa = PBXGroup;
 			children = (
 				3E3A64492828E32000342269 /* CVMaker */,
 				3E3A64482828E32000342269 /* Products */,
+				1F49D6A45CE0F41316DF2FED /* Pods */,
+				98234A9C968E9CF8CAC22FF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +204,7 @@
 			children = (
 				3E3A644A2828E32000342269 /* AppDelegate.swift */,
 				3E3A644C2828E32000342269 /* SceneDelegate.swift */,
+				3E3A64F8282A036500342269 /* ExportPDF */,
 				3E3A646A2828EF3300342269 /* MainViewController */,
 				3E3A64752829181700342269 /* CVTableViewController */,
 				3E3A64C3282976D300342269 /* PersonalInfoViewController */,
@@ -374,6 +397,24 @@
 			path = CoreDataModels;
 			sourceTree = "<group>";
 		};
+		3E3A64F8282A036500342269 /* ExportPDF */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64F22829F80500342269 /* ExportPDF.swift */,
+				3E3A64F4282A025F00342269 /* ExportPdfGetData.swift */,
+				3E3A64F6282A02F100342269 /* ExportPdfView.swift */,
+			);
+			path = ExportPDF;
+			sourceTree = "<group>";
+		};
+		98234A9C968E9CF8CAC22FF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E19252EBB7C35E6073DB1F5F /* Pods_CVMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,9 +422,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E3A645B2828E32300342269 /* Build configuration list for PBXNativeTarget "CVMaker" */;
 			buildPhases = (
+				89217DFA502C78272640B091 /* [CP] Check Pods Manifest.lock */,
 				3E3A64432828E32000342269 /* Sources */,
 				3E3A64442828E32000342269 /* Frameworks */,
 				3E3A64452828E32000342269 /* Resources */,
+				2CFD18C0C985B74F1BDEC70D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,6 +481,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CFD18C0C985B74F1BDEC70D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVMaker/Pods-CVMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVMaker/Pods-CVMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CVMaker/Pods-CVMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89217DFA502C78272640B091 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E3A64432828E32000342269 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -457,7 +542,9 @@
 				3E3A64C22829760900342269 /* PIViewControllerMethods.swift in Sources */,
 				3E3A64F128299F0800342269 /* SaveDataToCache.swift in Sources */,
 				3E3A64DF2829994F00342269 /* CSkills+CoreDataProperties.swift in Sources */,
+				3E3A64F7282A02F100342269 /* ExportPdfView.swift in Sources */,
 				3E3A644F2828E32000342269 /* MainViewController.swift in Sources */,
+				3E3A64F32829F80500342269 /* ExportPDF.swift in Sources */,
 				3E3A64E22829994F00342269 /* CEducationDetail+CoreDataClass.swift in Sources */,
 				3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */,
 				3E3A646E282910FD00342269 /* CVItems.swift in Sources */,
@@ -477,6 +564,7 @@
 				3E3A64ED28299D6500342269 /* RetrieveDataFromCache.swift in Sources */,
 				3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */,
 				3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */,
+				3E3A64F5282A026000342269 /* ExportPdfGetData.swift in Sources */,
 				3E3A64E42829994F00342269 /* CWorkSummary+CoreDataClass.swift in Sources */,
 				3E3A64E62829994F00342269 /* CProjectDetail+CoreDataClass.swift in Sources */,
 				3E3A64C0282972CC00342269 /* PIViewControllerLifeCycle.swift in Sources */,
@@ -644,6 +732,7 @@
 		};
 		3E3A645C2828E32300342269 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980FA1994675AE5814368196 /* Pods-CVMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -663,6 +752,7 @@
 		};
 		3E3A645D2828E32300342269 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BC5CFB4399995462D5C9D3 /* Pods-CVMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
