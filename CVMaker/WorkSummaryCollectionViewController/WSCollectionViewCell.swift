@@ -22,14 +22,21 @@ class WorkSummaryCollectionViewCell: BaseCollectionViewCell {
     
     var workSummaryCellViewModel: WorkSummaryCellViewModel! {
         didSet {
+            
             if let name = workSummaryCellViewModel.companyName {
                 companyNameTextField.text = name
+            } else {
+                companyNameTextField.text = ""
             }
             if let duration = workSummaryCellViewModel.duration {
                 durationTextField.text =  duration
+            } else {
+                durationTextField.text =  ""
             }
             if let description = workSummaryCellViewModel.description {
                 descriptionTextView.text = description
+            } else {
+                descriptionTextView.text = ""
             }
         }
     }
