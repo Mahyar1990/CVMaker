@@ -17,7 +17,7 @@ extension MainViewController {
     // MARK: - setup Objects Styles
     private func setupObjectsStyles() {
         setupButton(button: createButton, withName: Constants.Main.createCV, withSelector: #selector(createButtonDidSelected))
-        setupButton(button: editButton, withName: Constants.Main.editCV, withSelector: #selector(editButtonDidSelected))
+//        setupButton(button: editButton, withName: Constants.Main.editCV, withSelector: #selector(editButtonDidSelected))
     }
     
     private func setupButton(button: UIButton, withName: String, withSelector: Selector) {
@@ -34,7 +34,7 @@ extension MainViewController {
     // MARK: - setup View Layouts
     private func setupViewLayouts() {
         createButtonToView()
-        editButtonToView()
+//        editButtonToView()
     }
     
     private func createButtonToView() {
@@ -45,12 +45,12 @@ extension MainViewController {
         createButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
-    private func editButtonToView() {
-        view.addSubview(editButton)
-        editButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor, constant: 24).isActive = true
-        editButton.leftAnchor.constraint(equalTo: createButton.leftAnchor).isActive = true
-        editButton.rightAnchor.constraint(equalTo: createButton.rightAnchor).isActive = true
-        editButton.heightAnchor.constraint(equalToConstant: 200).isActive = true
-    }
+//    private func editButtonToView() {
+//        view.addSubview(editButton)
+//        editButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor, constant: 24).isActive = true
+//        editButton.leftAnchor.constraint(equalTo: createButton.leftAnchor).isActive = true
+//        editButton.rightAnchor.constraint(equalTo: createButton.rightAnchor).isActive = true
+//        editButton.heightAnchor.constraint(equalToConstant: 200).isActive = true
+//    }
     
 }

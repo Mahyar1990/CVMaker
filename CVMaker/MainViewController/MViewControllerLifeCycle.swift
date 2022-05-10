@@ -16,6 +16,8 @@ extension MainViewController {
         view.backgroundColor = UIColor.white
         setupNavigationBar()
         setupView()
+        
+        retrieveDataFromCache()
     }
     
     private func setupNavigationBar() {
@@ -24,6 +26,21 @@ extension MainViewController {
                                                                    NSAttributedString.Key.font: UIFont.myBoldSystemFont(ofSize: 16)]
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.title = Constants.Main.appTitle
+    }
+    
+    
+    func retrieveDataFromCache() {
+        DispatchQueue.global().async {
+            Cache.sharedInstance.retrieveAllPersonalInfoEntities { [weak self] (item, data) in
+                DispatchQueue.main.async {  [weak self] in
+                    if let _ = item {
+                        self?.createButton.setTitle(Constants.Main.editCV, for: UIControl.State.normal)
+                    } else {
+                        self?.createButton.setTitle(Constants.Main.createCV, for: UIControl.State.normal)
+                    }
+                }
+            }
+        }
     }
     
 }

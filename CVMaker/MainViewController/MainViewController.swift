@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     let createButton = UIButton()
-    let editButton = UIButton()
+//    let editButton = UIButton()
     
 }
 
