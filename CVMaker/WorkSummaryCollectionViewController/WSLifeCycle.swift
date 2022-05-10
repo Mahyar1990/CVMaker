@@ -36,7 +36,6 @@ extension WorkSummaryCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
-        
         var canSaveData = true
         for item in objectViewModels {
             if let name = item.companyName {
@@ -45,7 +44,6 @@ extension WorkSummaryCollectionViewController {
                 }
             }
         }
-        
         if canSaveData {
             let objects = objectViewModels
             DispatchQueue.global().async {

@@ -19,8 +19,11 @@ extension EducationDetailsCollectionViewController: UICollectionViewDataSource {
         cell.removeButton.addTarget(self, action: #selector(removeItemFromCollectionView(sender:)), for: .touchUpInside)
         
         cell.classTextField.delegate = self
+        cell.classTextField.accessibilityValue = Constants.EducationDetail.className
         cell.passingYearTextField.delegate = self
+        cell.passingYearTextField.accessibilityValue = Constants.EducationDetail.passingYear
         cell.percentageTextField.delegate = self
+        cell.percentageTextField.accessibilityValue = Constants.EducationDetail.percentage
         
         cell.classTextField.tag = indexPath.item
         cell.passingYearTextField.tag = indexPath.item
@@ -30,9 +33,7 @@ extension EducationDetailsCollectionViewController: UICollectionViewDataSource {
     }
     
     @objc func removeItemFromCollectionView(sender: UIButton) {
-        if (objectViewModels.count != 1) {
-            objectViewModels.remove(at: sender.tag)
-        }
+        objectViewModels.remove(at: sender.tag)
     }
 }
 
@@ -44,6 +45,26 @@ extension EducationDetailsCollectionViewController {
     // height of every cell of the collectionView
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width - 8, height: 164)
+    }
+    
+}
+
+
+
+extension EducationDetailsCollectionViewController {
+    
+    override func textFieldDidEndEditing(_ textField: UITextField) {
+        if let txt = textField.text {
+            switch textField.accessibilityValue {
+            case Constants.EducationDetail.className:
+                objectViewModels[textField.tag].className = txt
+            case Constants.EducationDetail.passingYear:
+                objectViewModels[textField.tag].passingYear = txt
+            case Constants.EducationDetail.percentage:
+                objectViewModels[textField.tag].percentage = txt
+            default: return
+            }
+        }
     }
     
 }

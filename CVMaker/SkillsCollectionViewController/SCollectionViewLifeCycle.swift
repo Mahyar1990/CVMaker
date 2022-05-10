@@ -30,17 +30,22 @@ extension SkillsCollectionViewController {
         skillItems.append(item)
     }
     @objc override func saveButtonSelected() {
-        for name in skillItems {
-            if name != "" && !name.starts(with: " ") {
-                DispatchQueue.global().async {
-                    Cache.sharedInstance.updateSkillsEntity(writeSkill: name)
-                }
-            } else {
-                // handle error that 'skill' is required
-                showAlert(alertTitle: Constants.Alert.errorOnSavingData,
-                          alertMessage: "The Skill textfield should not be empty!",
-                          okActionText: Constants.Alert.ok)
+        var canSaveData = true
+        for item in skillItems {
+            if item == "" || item.starts(with: " ") {
+                canSaveData = false
             }
+        }
+        if canSaveData {
+            let objects = skillItems
+            DispatchQueue.global().async {
+                Cache.sharedInstance.updateSkillsEntities(objects: objects)
+            }
+        } else {
+            // handle error that 'skill' is required
+            showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                      alertMessage: "The Skill textfield should not be empty!",
+                      okActionText: Constants.Alert.ok)
         }
     }
     

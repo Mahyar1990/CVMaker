@@ -27,9 +27,7 @@ extension SkillsCollectionViewController: UICollectionViewDataSource {
     }
     
     @objc func removeItemFromTableView(sender: UIButton) {
-        if (skillItems.count != 1) {
-            skillItems.remove(at: sender.tag)
-        }
+        skillItems.remove(at: sender.tag)
     }
     
 }
@@ -42,6 +40,17 @@ extension SkillsCollectionViewController {
     // height of every cell of the collectionView
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width - 8, height: 48)
+    }
+    
+}
+
+
+extension SkillsCollectionViewController {
+    
+    override func textFieldDidEndEditing(_ textField: UITextField) {
+        if let txt = textField.text {
+            skillItems[textField.tag] = txt
+        }
     }
     
 }

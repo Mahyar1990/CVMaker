@@ -34,23 +34,24 @@ extension ProjectDetailsCollectionViewController {
     }
     
     @objc override func saveButtonSelected() {
+        var canSaveData = true
         for item in objectViewModels {
             if let name = item.projectName {
-                if name != "" && !name.starts(with: " ") {
-                    DispatchQueue.global().async {
-                        Cache.sharedInstance.updateProjectDetailENtity(projectName:     name,
-                                                                       teamSize:        item.teamSize,
-                                                                       usedTechnologies: item.usedTechnologies,
-                                                                       role:            item.role,
-                                                                       summary:         item.projectSummary)
-                    }
-                } else {
-                    // handle error that 'ProjectName' is required
-                    showAlert(alertTitle: Constants.Alert.errorOnSavingData,
-                              alertMessage: "The ProjectName textfield should not be empty!",
-                              okActionText: Constants.Alert.ok)
+                if name == "" || name.starts(with: " ") {
+                    canSaveData = false
                 }
             }
+        }
+        if canSaveData {
+            let objects = objectViewModels
+            DispatchQueue.global().async {
+                Cache.sharedInstance.updateProjectDetailENtity(objects: objects)
+            }
+        } else {
+            // handle error that 'ProjectName' is required
+            showAlert(alertTitle: Constants.Alert.errorOnSavingData,
+                      alertMessage: "The ProjectName textfield should not be empty!",
+                      okActionText: Constants.Alert.ok)
         }
     }
     
