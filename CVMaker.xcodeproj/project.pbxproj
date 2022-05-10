@@ -9,19 +9,145 @@
 /* Begin PBXBuildFile section */
 		3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A644A2828E32000342269 /* AppDelegate.swift */; };
 		3E3A644D2828E32000342269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A644C2828E32000342269 /* SceneDelegate.swift */; };
-		3E3A644F2828E32000342269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A644E2828E32000342269 /* ViewController.swift */; };
+		3E3A644F2828E32000342269 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A644E2828E32000342269 /* MainViewController.swift */; };
 		3E3A64542828E32300342269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A64532828E32300342269 /* Assets.xcassets */; };
 		3E3A64572828E32300342269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A64552828E32300342269 /* LaunchScreen.storyboard */; };
+		3E3A645F2828EB1400342269 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A645E2828EB1400342269 /* Constants.swift */; };
+		3E3A64612828EBBE00342269 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64602828EBBE00342269 /* FontExtension.swift */; };
+		3E3A64632828ED4800342269 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64622828ED4800342269 /* UIButtonExtension.swift */; };
+		3E3A64652828EE1600342269 /* MViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64642828EE1600342269 /* MViewControllerLifeCycle.swift */; };
+		3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64662828EE2100342269 /* MViewControllerView.swift */; };
+		3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64682828EEBE00342269 /* MViewControllerViewMethods.swift */; };
+		3E3A646C2828F10E00342269 /* CVTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A646B2828F10E00342269 /* CVTableViewController.swift */; };
+		3E3A646E282910FD00342269 /* CVItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A646D282910FD00342269 /* CVItems.swift */; };
+		3E3A6470282911C000342269 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A646F282911C000342269 /* UIImageExtension.swift */; };
+		3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */; };
+		3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */; };
+		3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */; };
+		3E3A647C28291AFB00342269 /* BaseCollectionViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */; };
+		3E3A647E28291B2B00342269 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647D28291B2B00342269 /* UILabelExtension.swift */; };
+		3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */; };
+		3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */; };
+		3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */; };
+		3E3A648828291DBB00342269 /* WSCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648728291DBB00342269 /* WSCollectionViewController.swift */; };
+		3E3A648B28291DF100342269 /* WSLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648A28291DF100342269 /* WSLifeCycle.swift */; };
+		3E3A648D28291EAB00342269 /* WSCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648C28291EAB00342269 /* WSCellViewModel.swift */; };
+		3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */; };
+		3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649028291F8200342269 /* UITextFieldExtension.swift */; };
+		3E3A64932829200600342269 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64922829200600342269 /* UITextViewExtension.swift */; };
+		3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */; };
+		3E3A64972829675A00342269 /* SCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64962829675A00342269 /* SCollectionViewController.swift */; };
+		3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */; };
+		3E3A649C2829679B00342269 /* SCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */; };
+		3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649D282967B200342269 /* SCollectionViewCell.swift */; };
+		3E3A64A0282969E800342269 /* EDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A649F282969E800342269 /* EDCollectionViewController.swift */; };
+		3E3A64A328296A0700342269 /* EDLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A228296A0700342269 /* EDLifeCycle.swift */; };
+		3E3A64A528296A2400342269 /* EDCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A428296A2400342269 /* EDCellViewModel.swift */; };
+		3E3A64A728296A3400342269 /* EDCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */; };
+		3E3A64A928296A4600342269 /* EDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */; };
+		3E3A64AB28296B4800342269 /* PDCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64AA28296B4800342269 /* PDCollectionViewController.swift */; };
+		3E3A64AD28296B5700342269 /* PDLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64AC28296B5700342269 /* PDLifeCycle.swift */; };
+		3E3A64B028296BF400342269 /* PDCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64AF28296BF400342269 /* PDCellViewModel.swift */; };
+		3E3A64B228296C0D00342269 /* PDCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64B128296C0D00342269 /* PDCollectionViewDelegates.swift */; };
+		3E3A64B428296C1D00342269 /* PDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64B328296C1D00342269 /* PDCollectionViewCell.swift */; };
+		3E3A64B828296E8000342269 /* PIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64B728296E8000342269 /* PIViewController.swift */; };
+		3E3A64BA28296EF400342269 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64B928296EF400342269 /* UIImageViewExtension.swift */; };
+		3E3A64BC282970D400342269 /* PIViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64BB282970D400342269 /* PIViewControllerDelegates.swift */; };
+		3E3A64BE2829726900342269 /* PIViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64BD2829726900342269 /* PIViewControllerView.swift */; };
+		3E3A64C0282972CC00342269 /* PIViewControllerLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64BF282972CC00342269 /* PIViewControllerLifeCycle.swift */; };
+		3E3A64C22829760900342269 /* PIViewControllerMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C12829760900342269 /* PIViewControllerMethods.swift */; };
+		3E3A64C52829779A00342269 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C42829779A00342269 /* ImagePickerManager.swift */; };
+		3E3A64C8282977B400342269 /* ImagePickerManagerMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C7282977B400342269 /* ImagePickerManagerMethods.swift */; };
+		3E3A64CA282977C500342269 /* ImagePickerManagerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64C9282977C500342269 /* ImagePickerManagerDelegates.swift */; };
+		3E3A64D2282997AF00342269 /* CVMaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D0282997AF00342269 /* CVMaker.xcdatamodeld */; };
+		3E3A64DE2829994F00342269 /* CSkills+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D42829994F00342269 /* CSkills+CoreDataClass.swift */; };
+		3E3A64DF2829994F00342269 /* CSkills+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D52829994F00342269 /* CSkills+CoreDataProperties.swift */; };
+		3E3A64E02829994F00342269 /* CPersonalInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D62829994F00342269 /* CPersonalInfo+CoreDataClass.swift */; };
+		3E3A64E12829994F00342269 /* CPersonalInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D72829994F00342269 /* CPersonalInfo+CoreDataProperties.swift */; };
+		3E3A64E22829994F00342269 /* CEducationDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D82829994F00342269 /* CEducationDetail+CoreDataClass.swift */; };
+		3E3A64E32829994F00342269 /* CEducationDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64D92829994F00342269 /* CEducationDetail+CoreDataProperties.swift */; };
+		3E3A64E42829994F00342269 /* CWorkSummary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DA2829994F00342269 /* CWorkSummary+CoreDataClass.swift */; };
+		3E3A64E52829994F00342269 /* CWorkSummary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DB2829994F00342269 /* CWorkSummary+CoreDataProperties.swift */; };
+		3E3A64E62829994F00342269 /* CProjectDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DC2829994F00342269 /* CProjectDetail+CoreDataClass.swift */; };
+		3E3A64E72829994F00342269 /* CProjectDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64DD2829994F00342269 /* CProjectDetail+CoreDataProperties.swift */; };
+		3E3A64E928299BB400342269 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64E828299BB400342269 /* CoreDataStack.swift */; };
+		3E3A64EB28299BED00342269 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EA28299BED00342269 /* Cache.swift */; };
+		3E3A64ED28299D6500342269 /* RetrieveDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */; };
+		3E3A64EF28299E8100342269 /* DeleteDataFromCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */; };
+		3E3A64F128299F0800342269 /* SaveDataToCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A64F028299F0800342269 /* SaveDataToCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E3A64472828E32000342269 /* CVMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3A644A2828E32000342269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E3A644C2828E32000342269 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E3A644E2828E32000342269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E3A644E2828E32000342269 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3E3A64532828E32300342269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E3A64562828E32300342269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E3A64582828E32300342269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E3A645E2828EB1400342269 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3E3A64602828EBBE00342269 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		3E3A64622828ED4800342269 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		3E3A64642828EE1600342269 /* MViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MViewControllerLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64662828EE2100342269 /* MViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MViewControllerView.swift; sourceTree = "<group>"; };
+		3E3A64682828EEBE00342269 /* MViewControllerViewMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MViewControllerViewMethods.swift; sourceTree = "<group>"; };
+		3E3A646B2828F10E00342269 /* CVTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewController.swift; sourceTree = "<group>"; };
+		3E3A646D282910FD00342269 /* CVItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVItems.swift; sourceTree = "<group>"; };
+		3E3A646F282911C000342269 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewControllerLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewControllerDelegates.swift; sourceTree = "<group>"; };
+		3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A647D28291B2B00342269 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewControllerView.swift; sourceTree = "<group>"; };
+		3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewControllerDelegates.swift; sourceTree = "<group>"; };
+		3E3A648728291DBB00342269 /* WSCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A648A28291DF100342269 /* WSLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A648C28291EAB00342269 /* WSCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCellViewModel.swift; sourceTree = "<group>"; };
+		3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A649028291F8200342269 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		3E3A64922829200600342269 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A64962829675A00342269 /* SCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A649D282967B200342269 /* SCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A649F282969E800342269 /* EDCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A64A228296A0700342269 /* EDLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64A428296A2400342269 /* EDCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCellViewModel.swift; sourceTree = "<group>"; };
+		3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A64AA28296B4800342269 /* PDCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDCollectionViewController.swift; sourceTree = "<group>"; };
+		3E3A64AC28296B5700342269 /* PDLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64AF28296BF400342269 /* PDCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDCellViewModel.swift; sourceTree = "<group>"; };
+		3E3A64B128296C0D00342269 /* PDCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		3E3A64B328296C1D00342269 /* PDCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E3A64B728296E8000342269 /* PIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewController.swift; sourceTree = "<group>"; };
+		3E3A64B928296EF400342269 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		3E3A64BB282970D400342269 /* PIViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewControllerDelegates.swift; sourceTree = "<group>"; };
+		3E3A64BD2829726900342269 /* PIViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewControllerView.swift; sourceTree = "<group>"; };
+		3E3A64BF282972CC00342269 /* PIViewControllerLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewControllerLifeCycle.swift; sourceTree = "<group>"; };
+		3E3A64C12829760900342269 /* PIViewControllerMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIViewControllerMethods.swift; sourceTree = "<group>"; };
+		3E3A64C42829779A00342269 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		3E3A64C7282977B400342269 /* ImagePickerManagerMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManagerMethods.swift; sourceTree = "<group>"; };
+		3E3A64C9282977C500342269 /* ImagePickerManagerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManagerDelegates.swift; sourceTree = "<group>"; };
+		3E3A64D1282997AF00342269 /* CVMaker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CVMaker.xcdatamodel; sourceTree = "<group>"; };
+		3E3A64D42829994F00342269 /* CSkills+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CSkills+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CSkills+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D52829994F00342269 /* CSkills+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CSkills+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CSkills+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D62829994F00342269 /* CPersonalInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CPersonalInfo+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CPersonalInfo+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D72829994F00342269 /* CPersonalInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CPersonalInfo+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CPersonalInfo+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D82829994F00342269 /* CEducationDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CEducationDetail+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CEducationDetail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64D92829994F00342269 /* CEducationDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CEducationDetail+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CEducationDetail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64DA2829994F00342269 /* CWorkSummary+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CWorkSummary+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CWorkSummary+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64DB2829994F00342269 /* CWorkSummary+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CWorkSummary+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CWorkSummary+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64DC2829994F00342269 /* CProjectDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CProjectDetail+CoreDataClass.swift"; path = "CVMaker/CoreDataCache/CProjectDetail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64DD2829994F00342269 /* CProjectDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CProjectDetail+CoreDataProperties.swift"; path = "CVMaker/CoreDataCache/CProjectDetail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3E3A64E828299BB400342269 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3E3A64EA28299BED00342269 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveDataFromCache.swift; sourceTree = "<group>"; };
+		3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDataFromCache.swift; sourceTree = "<group>"; };
+		3E3A64F028299F0800342269 /* SaveDataToCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDataToCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +182,196 @@
 			children = (
 				3E3A644A2828E32000342269 /* AppDelegate.swift */,
 				3E3A644C2828E32000342269 /* SceneDelegate.swift */,
-				3E3A644E2828E32000342269 /* ViewController.swift */,
+				3E3A646A2828EF3300342269 /* MainViewController */,
+				3E3A64752829181700342269 /* CVTableViewController */,
+				3E3A64C3282976D300342269 /* PersonalInfoViewController */,
+				3E3A648528291D9500342269 /* BaseCollectionViewController */,
+				3E3A648928291DD800342269 /* WorkSummaryCollectionViewController */,
+				3E3A64A1282969F000342269 /* EducationDetailsCollectionViewController */,
+				3E3A64AE28296B7D00342269 /* ProjectDetailsCollectionViewController */,
+				3E3A64982829676400342269 /* SkillsCollectionViewController */,
+				3E3A64C6282977A200342269 /* ImagePickerManager */,
+				3E3A647828291A0900342269 /* Helpers */,
+				3E3A64CF2829978A00342269 /* CoreDataCache */,
 				3E3A64532828E32300342269 /* Assets.xcassets */,
 				3E3A64552828E32300342269 /* LaunchScreen.storyboard */,
 				3E3A64582828E32300342269 /* Info.plist */,
 			);
 			path = CVMaker;
+			sourceTree = "<group>";
+		};
+		3E3A646A2828EF3300342269 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A644E2828E32000342269 /* MainViewController.swift */,
+				3E3A64642828EE1600342269 /* MViewControllerLifeCycle.swift */,
+				3E3A64662828EE2100342269 /* MViewControllerView.swift */,
+				3E3A64682828EEBE00342269 /* MViewControllerViewMethods.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64752829181700342269 /* CVTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A646B2828F10E00342269 /* CVTableViewController.swift */,
+				3E3A64712829120A00342269 /* CVTableViewControllerLifeCycle.swift */,
+				3E3A64732829121F00342269 /* CVTableViewControllerDelegates.swift */,
+			);
+			path = CVTableViewController;
+			sourceTree = "<group>";
+		};
+		3E3A6476282919EE00342269 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A646D282910FD00342269 /* CVItems.swift */,
+				3E3A645E2828EB1400342269 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3E3A6477282919F800342269 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64602828EBBE00342269 /* FontExtension.swift */,
+				3E3A647D28291B2B00342269 /* UILabelExtension.swift */,
+				3E3A646F282911C000342269 /* UIImageExtension.swift */,
+				3E3A64B928296EF400342269 /* UIImageViewExtension.swift */,
+				3E3A64622828ED4800342269 /* UIButtonExtension.swift */,
+				3E3A649028291F8200342269 /* UITextFieldExtension.swift */,
+				3E3A64922829200600342269 /* UITextViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E3A647828291A0900342269 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A6476282919EE00342269 /* Constants */,
+				3E3A6477282919F800342269 /* Extensions */,
+				3E3A648628291DA100342269 /* BaseCells */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3E3A648528291D9500342269 /* BaseCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A647928291A6F00342269 /* BaseCollectionViewController.swift */,
+				3E3A647B28291AFB00342269 /* BaseCollectionViewLifeCycle.swift */,
+				3E3A647F28291B6400342269 /* BaseCollectionViewControllerView.swift */,
+				3E3A648328291CE100342269 /* BaseCollectionViewControllerDelegates.swift */,
+			);
+			path = BaseCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A648628291DA100342269 /* BaseCells */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A648128291C7E00342269 /* BaseCollectionViewCell.swift */,
+			);
+			path = BaseCells;
+			sourceTree = "<group>";
+		};
+		3E3A648928291DD800342269 /* WorkSummaryCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A648728291DBB00342269 /* WSCollectionViewController.swift */,
+				3E3A648A28291DF100342269 /* WSLifeCycle.swift */,
+				3E3A648C28291EAB00342269 /* WSCellViewModel.swift */,
+				3E3A6494282920C600342269 /* WSCollectionViewDelegates.swift */,
+				3E3A648E28291F4900342269 /* WSCollectionViewCell.swift */,
+			);
+			path = WorkSummaryCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64982829676400342269 /* SkillsCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64962829675A00342269 /* SCollectionViewController.swift */,
+				3E3A64992829677E00342269 /* SCollectionViewLifeCycle.swift */,
+				3E3A649B2829679B00342269 /* SCollectionViewDelegates.swift */,
+				3E3A649D282967B200342269 /* SCollectionViewCell.swift */,
+			);
+			path = SkillsCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64A1282969F000342269 /* EducationDetailsCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A649F282969E800342269 /* EDCollectionViewController.swift */,
+				3E3A64A228296A0700342269 /* EDLifeCycle.swift */,
+				3E3A64A428296A2400342269 /* EDCellViewModel.swift */,
+				3E3A64A628296A3400342269 /* EDCollectionViewDelegates.swift */,
+				3E3A64A828296A4600342269 /* EDCollectionViewCell.swift */,
+			);
+			path = EducationDetailsCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64AE28296B7D00342269 /* ProjectDetailsCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64AA28296B4800342269 /* PDCollectionViewController.swift */,
+				3E3A64AC28296B5700342269 /* PDLifeCycle.swift */,
+				3E3A64AF28296BF400342269 /* PDCellViewModel.swift */,
+				3E3A64B128296C0D00342269 /* PDCollectionViewDelegates.swift */,
+				3E3A64B328296C1D00342269 /* PDCollectionViewCell.swift */,
+			);
+			path = ProjectDetailsCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64C3282976D300342269 /* PersonalInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64B728296E8000342269 /* PIViewController.swift */,
+				3E3A64BF282972CC00342269 /* PIViewControllerLifeCycle.swift */,
+				3E3A64BD2829726900342269 /* PIViewControllerView.swift */,
+				3E3A64BB282970D400342269 /* PIViewControllerDelegates.swift */,
+				3E3A64C12829760900342269 /* PIViewControllerMethods.swift */,
+			);
+			path = PersonalInfoViewController;
+			sourceTree = "<group>";
+		};
+		3E3A64C6282977A200342269 /* ImagePickerManager */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64C42829779A00342269 /* ImagePickerManager.swift */,
+				3E3A64C7282977B400342269 /* ImagePickerManagerMethods.swift */,
+				3E3A64C9282977C500342269 /* ImagePickerManagerDelegates.swift */,
+			);
+			path = ImagePickerManager;
+			sourceTree = "<group>";
+		};
+		3E3A64CF2829978A00342269 /* CoreDataCache */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64D0282997AF00342269 /* CVMaker.xcdatamodeld */,
+				3E3A64D3282998FD00342269 /* CoreDataModels */,
+				3E3A64E828299BB400342269 /* CoreDataStack.swift */,
+				3E3A64EA28299BED00342269 /* Cache.swift */,
+				3E3A64F028299F0800342269 /* SaveDataToCache.swift */,
+				3E3A64EE28299E8100342269 /* DeleteDataFromCache.swift */,
+				3E3A64EC28299D6500342269 /* RetrieveDataFromCache.swift */,
+			);
+			name = CoreDataCache;
+			path = ImagePickerManager/CoreDataCache;
+			sourceTree = "<group>";
+		};
+		3E3A64D3282998FD00342269 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A64D42829994F00342269 /* CSkills+CoreDataClass.swift */,
+				3E3A64D52829994F00342269 /* CSkills+CoreDataProperties.swift */,
+				3E3A64D62829994F00342269 /* CPersonalInfo+CoreDataClass.swift */,
+				3E3A64D72829994F00342269 /* CPersonalInfo+CoreDataProperties.swift */,
+				3E3A64D82829994F00342269 /* CEducationDetail+CoreDataClass.swift */,
+				3E3A64D92829994F00342269 /* CEducationDetail+CoreDataProperties.swift */,
+				3E3A64DA2829994F00342269 /* CWorkSummary+CoreDataClass.swift */,
+				3E3A64DB2829994F00342269 /* CWorkSummary+CoreDataProperties.swift */,
+				3E3A64DC2829994F00342269 /* CProjectDetail+CoreDataClass.swift */,
+				3E3A64DD2829994F00342269 /* CProjectDetail+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,9 +443,72 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E3A644F2828E32000342269 /* ViewController.swift in Sources */,
+				3E3A64612828EBBE00342269 /* FontExtension.swift in Sources */,
+				3E3A64A928296A4600342269 /* EDCollectionViewCell.swift in Sources */,
+				3E3A64BA28296EF400342269 /* UIImageViewExtension.swift in Sources */,
+				3E3A64AD28296B5700342269 /* PDLifeCycle.swift in Sources */,
+				3E3A649C2829679B00342269 /* SCollectionViewDelegates.swift in Sources */,
+				3E3A648828291DBB00342269 /* WSCollectionViewController.swift in Sources */,
+				3E3A64742829121F00342269 /* CVTableViewControllerDelegates.swift in Sources */,
+				3E3A647E28291B2B00342269 /* UILabelExtension.swift in Sources */,
+				3E3A64CA282977C500342269 /* ImagePickerManagerDelegates.swift in Sources */,
+				3E3A64E928299BB400342269 /* CoreDataStack.swift in Sources */,
+				3E3A64722829120A00342269 /* CVTableViewControllerLifeCycle.swift in Sources */,
+				3E3A64C22829760900342269 /* PIViewControllerMethods.swift in Sources */,
+				3E3A64F128299F0800342269 /* SaveDataToCache.swift in Sources */,
+				3E3A64DF2829994F00342269 /* CSkills+CoreDataProperties.swift in Sources */,
+				3E3A644F2828E32000342269 /* MainViewController.swift in Sources */,
+				3E3A64E22829994F00342269 /* CEducationDetail+CoreDataClass.swift in Sources */,
+				3E3A648F28291F4900342269 /* WSCollectionViewCell.swift in Sources */,
+				3E3A646E282910FD00342269 /* CVItems.swift in Sources */,
+				3E3A64B228296C0D00342269 /* PDCollectionViewDelegates.swift in Sources */,
+				3E3A64E52829994F00342269 /* CWorkSummary+CoreDataProperties.swift in Sources */,
+				3E3A64972829675A00342269 /* SCollectionViewController.swift in Sources */,
+				3E3A646C2828F10E00342269 /* CVTableViewController.swift in Sources */,
+				3E3A648B28291DF100342269 /* WSLifeCycle.swift in Sources */,
+				3E3A649128291F8200342269 /* UITextFieldExtension.swift in Sources */,
+				3E3A64692828EEBE00342269 /* MViewControllerViewMethods.swift in Sources */,
+				3E3A64E32829994F00342269 /* CEducationDetail+CoreDataProperties.swift in Sources */,
+				3E3A6495282920C600342269 /* WSCollectionViewDelegates.swift in Sources */,
+				3E3A64E72829994F00342269 /* CProjectDetail+CoreDataProperties.swift in Sources */,
+				3E3A64D2282997AF00342269 /* CVMaker.xcdatamodeld in Sources */,
+				3E3A64EB28299BED00342269 /* Cache.swift in Sources */,
 				3E3A644B2828E32000342269 /* AppDelegate.swift in Sources */,
+				3E3A64ED28299D6500342269 /* RetrieveDataFromCache.swift in Sources */,
+				3E3A649E282967B200342269 /* SCollectionViewCell.swift in Sources */,
+				3E3A649A2829677E00342269 /* SCollectionViewLifeCycle.swift in Sources */,
+				3E3A64E42829994F00342269 /* CWorkSummary+CoreDataClass.swift in Sources */,
+				3E3A64E62829994F00342269 /* CProjectDetail+CoreDataClass.swift in Sources */,
+				3E3A64C0282972CC00342269 /* PIViewControllerLifeCycle.swift in Sources */,
+				3E3A64672828EE2100342269 /* MViewControllerView.swift in Sources */,
+				3E3A648228291C7E00342269 /* BaseCollectionViewCell.swift in Sources */,
+				3E3A64EF28299E8100342269 /* DeleteDataFromCache.swift in Sources */,
+				3E3A64BE2829726900342269 /* PIViewControllerView.swift in Sources */,
+				3E3A64B828296E8000342269 /* PIViewController.swift in Sources */,
+				3E3A648028291B6400342269 /* BaseCollectionViewControllerView.swift in Sources */,
+				3E3A64AB28296B4800342269 /* PDCollectionViewController.swift in Sources */,
+				3E3A647A28291A6F00342269 /* BaseCollectionViewController.swift in Sources */,
+				3E3A64E12829994F00342269 /* CPersonalInfo+CoreDataProperties.swift in Sources */,
+				3E3A647C28291AFB00342269 /* BaseCollectionViewLifeCycle.swift in Sources */,
+				3E3A64B428296C1D00342269 /* PDCollectionViewCell.swift in Sources */,
+				3E3A64DE2829994F00342269 /* CSkills+CoreDataClass.swift in Sources */,
+				3E3A64A728296A3400342269 /* EDCollectionViewDelegates.swift in Sources */,
+				3E3A648428291CE100342269 /* BaseCollectionViewControllerDelegates.swift in Sources */,
+				3E3A64A328296A0700342269 /* EDLifeCycle.swift in Sources */,
 				3E3A644D2828E32000342269 /* SceneDelegate.swift in Sources */,
+				3E3A64E02829994F00342269 /* CPersonalInfo+CoreDataClass.swift in Sources */,
+				3E3A645F2828EB1400342269 /* Constants.swift in Sources */,
+				3E3A64A528296A2400342269 /* EDCellViewModel.swift in Sources */,
+				3E3A64C8282977B400342269 /* ImagePickerManagerMethods.swift in Sources */,
+				3E3A64BC282970D400342269 /* PIViewControllerDelegates.swift in Sources */,
+				3E3A64632828ED4800342269 /* UIButtonExtension.swift in Sources */,
+				3E3A64652828EE1600342269 /* MViewControllerLifeCycle.swift in Sources */,
+				3E3A64932829200600342269 /* UITextViewExtension.swift in Sources */,
+				3E3A648D28291EAB00342269 /* WSCellViewModel.swift in Sources */,
+				3E3A64A0282969E800342269 /* EDCollectionViewController.swift in Sources */,
+				3E3A6470282911C000342269 /* UIImageExtension.swift in Sources */,
+				3E3A64B028296BF400342269 /* PDCellViewModel.swift in Sources */,
+				3E3A64C52829779A00342269 /* ImagePickerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +702,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3E3A64D0282997AF00342269 /* CVMaker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3E3A64D1282997AF00342269 /* CVMaker.xcdatamodel */,
+			);
+			currentVersion = 3E3A64D1282997AF00342269 /* CVMaker.xcdatamodel */;
+			path = CVMaker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3E3A643F2828E32000342269 /* Project object */;
 }
